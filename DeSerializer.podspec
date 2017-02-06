@@ -1,6 +1,9 @@
 Pod::Spec.new do |s|
+  s.platform = :ios
+  s.ios.deployment_target = '8.0'
+
   s.name         = "DeSerializer"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "Lightweight library for JSON to object mapping using KVC and ObjC-Runtime"
 
   s.description  = <<-DESC
@@ -8,18 +11,15 @@ Pod::Spec.new do |s|
   This library is supposed to do it autimatically, leaving to user possibility of defining own transformations. 
                    DESC
 
-  s.homepage     = "https://github.com/IljaKosynkin/KlappaDeSerializer"
+  s.homepage     = "https://github.com/IljaKosynkin/DeSerializer"
 
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
 
   s.author             = { "Ilia Kosynkin" => "ilja.kosynkin@gmail.com" }
 
-  s.dependency 'KlappaInjector'
+  s.dependency 'KlappaDeSerializer'
 
-  s.source       = { :git => "https://github.com/IljaKosynkin/DeSerializer.git", :tag => "v1.0.0" }
+  s.source       = { :git => "https://github.com/IljaKosynkin/DeSerializer.git", :tag => "v1.0.2" }
 
-  s.source_files  = "DeSerializer", "DeSerializer/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
-
-  s.platform = :ios, '5.0'
+  s.source_files  = "DeSerializer", "DeSerializer/**/*.{swift}"
 end
