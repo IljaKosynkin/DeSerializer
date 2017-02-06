@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32600D8285C64834883CD8D5 /* Pods_DeSerializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91055E89949DC67AD724FBA7 /* Pods_DeSerializer.framework */; };
+		5F03960A1E40661A00BA7E42 /* ClosureValuesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0396091E40661A00BA7E42 /* ClosureValuesConverter.swift */; };
+		5F0396311E4074F100BA7E42 /* DeSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0396301E4074F100BA7E42 /* DeSerializer.swift */; };
+		5F0396381E407B5100BA7E42 /* Array.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F0396331E407B5100BA7E42 /* Array.json */; };
+		5F0396391E407B5100BA7E42 /* NestedObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F0396341E407B5100BA7E42 /* NestedObject.json */; };
+		5F03963A1E407B5100BA7E42 /* NestedObjectWithArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F0396351E407B5100BA7E42 /* NestedObjectWithArray.json */; };
+		5F03963B1E407B5100BA7E42 /* SimpleObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F0396361E407B5100BA7E42 /* SimpleObject.json */; };
+		5F03963C1E407B5100BA7E42 /* SimpleObject2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F0396371E407B5100BA7E42 /* SimpleObject2.json */; };
+		5F048AFB1E486810005A85B7 /* DeSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F048AFA1E486810005A85B7 /* DeSerializerTests.swift */; };
+		5F048AFD1E486845005A85B7 /* CommonClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F048AFC1E486845005A85B7 /* CommonClasses.swift */; };
 		5F0B49161E3FA67500CB4023 /* DeSerializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0B490C1E3FA67500CB4023 /* DeSerializer.framework */; };
-		5F0B491B1E3FA67500CB4023 /* DeSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B491A1E3FA67500CB4023 /* DeSerializerTests.swift */; };
+		5F0B491B1E3FA67500CB4023 /* DefaultDeserializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B491A1E3FA67500CB4023 /* DefaultDeserializerTests.swift */; };
 		5F0B491D1E3FA67500CB4023 /* DeSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0B490F1E3FA67500CB4023 /* DeSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F0B49271E3FA98400CB4023 /* DefaultDeSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B49261E3FA98400CB4023 /* DefaultDeSerializer.swift */; };
+		5F0B49291E3FAAE900CB4023 /* DeSerializerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B49281E3FAAE900CB4023 /* DeSerializerProtocol.swift */; };
+		5F0B492D1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B492C1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift */; };
+		5F0B492F1E3FD36000CB4023 /* Typeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B492E1E3FD36000CB4023 /* Typeable.swift */; };
+		5F13227A1E47B6100071401C /* SwiftyArrayTypeExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1322791E47B6100071401C /* SwiftyArrayTypeExtractor.swift */; };
+		7B169D844931BFB19FE7212A /* Pods_DeSerializerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039CC2BB6366F6AFA45873CF /* Pods_DeSerializerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +39,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		039CC2BB6366F6AFA45873CF /* Pods_DeSerializerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeSerializerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0396091E40661A00BA7E42 /* ClosureValuesConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureValuesConverter.swift; sourceTree = "<group>"; };
+		5F0396301E4074F100BA7E42 /* DeSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeSerializer.swift; sourceTree = "<group>"; };
+		5F0396331E407B5100BA7E42 /* Array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Array.json; sourceTree = "<group>"; };
+		5F0396341E407B5100BA7E42 /* NestedObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NestedObject.json; sourceTree = "<group>"; };
+		5F0396351E407B5100BA7E42 /* NestedObjectWithArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NestedObjectWithArray.json; sourceTree = "<group>"; };
+		5F0396361E407B5100BA7E42 /* SimpleObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SimpleObject.json; sourceTree = "<group>"; };
+		5F0396371E407B5100BA7E42 /* SimpleObject2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SimpleObject2.json; sourceTree = "<group>"; };
+		5F048AFA1E486810005A85B7 /* DeSerializerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeSerializerTests.swift; sourceTree = "<group>"; };
+		5F048AFC1E486845005A85B7 /* CommonClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonClasses.swift; sourceTree = "<group>"; };
 		5F0B490C1E3FA67500CB4023 /* DeSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeSerializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F0B490F1E3FA67500CB4023 /* DeSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeSerializer.h; sourceTree = "<group>"; };
 		5F0B49101E3FA67500CB4023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F0B49151E3FA67500CB4023 /* DeSerializerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeSerializerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F0B491A1E3FA67500CB4023 /* DeSerializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeSerializerTests.swift; sourceTree = "<group>"; };
+		5F0B491A1E3FA67500CB4023 /* DefaultDeserializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDeserializerTests.swift; sourceTree = "<group>"; };
 		5F0B491C1E3FA67500CB4023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F0B49261E3FA98400CB4023 /* DefaultDeSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultDeSerializer.swift; sourceTree = "<group>"; };
+		5F0B49281E3FAAE900CB4023 /* DeSerializerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeSerializerProtocol.swift; sourceTree = "<group>"; };
+		5F0B492C1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyFieldsRetriever.swift; sourceTree = "<group>"; };
+		5F0B492E1E3FD36000CB4023 /* Typeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typeable.swift; sourceTree = "<group>"; };
+		5F1322791E47B6100071401C /* SwiftyArrayTypeExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyArrayTypeExtractor.swift; sourceTree = "<group>"; };
+		822420A462ADD36D9386F899 /* Pods-DeSerializer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeSerializer.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeSerializer/Pods-DeSerializer.release.xcconfig"; sourceTree = "<group>"; };
+		91055E89949DC67AD724FBA7 /* Pods_DeSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeSerializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CDA72B3C666300CDAF6B63F /* Pods-DeSerializerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeSerializerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeSerializerTests/Pods-DeSerializerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B74C79F072614AA2F8EDE2A2 /* Pods-DeSerializer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeSerializer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeSerializer/Pods-DeSerializer.debug.xcconfig"; sourceTree = "<group>"; };
+		FEA8DED6B68CAF89539A6E2A /* Pods-DeSerializerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeSerializerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeSerializerTests/Pods-DeSerializerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32600D8285C64834883CD8D5 /* Pods_DeSerializer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +81,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0B49161E3FA67500CB4023 /* DeSerializer.framework in Frameworks */,
+				7B169D844931BFB19FE7212A /* Pods_DeSerializerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C5440621AC7D44C56D09534 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B74C79F072614AA2F8EDE2A2 /* Pods-DeSerializer.debug.xcconfig */,
+				822420A462ADD36D9386F899 /* Pods-DeSerializer.release.xcconfig */,
+				FEA8DED6B68CAF89539A6E2A /* Pods-DeSerializerTests.debug.xcconfig */,
+				9CDA72B3C666300CDAF6B63F /* Pods-DeSerializerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F0396321E407B5100BA7E42 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				5F0396331E407B5100BA7E42 /* Array.json */,
+				5F0396341E407B5100BA7E42 /* NestedObject.json */,
+				5F0396351E407B5100BA7E42 /* NestedObjectWithArray.json */,
+				5F0396361E407B5100BA7E42 /* SimpleObject.json */,
+				5F0396371E407B5100BA7E42 /* SimpleObject2.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		5F0B49021E3FA67500CB4023 = {
 			isa = PBXGroup;
 			children = (
 				5F0B490E1E3FA67500CB4023 /* DeSerializer */,
 				5F0B49191E3FA67500CB4023 /* DeSerializerTests */,
 				5F0B490D1E3FA67500CB4023 /* Products */,
+				2C5440621AC7D44C56D09534 /* Pods */,
+				E97B0D25D2A84D4E9344A7E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +136,13 @@
 			children = (
 				5F0B490F1E3FA67500CB4023 /* DeSerializer.h */,
 				5F0B49101E3FA67500CB4023 /* Info.plist */,
+				5F0B492E1E3FD36000CB4023 /* Typeable.swift */,
+				5F0396301E4074F100BA7E42 /* DeSerializer.swift */,
+				5F0B49281E3FAAE900CB4023 /* DeSerializerProtocol.swift */,
+				5F0B49261E3FA98400CB4023 /* DefaultDeSerializer.swift */,
+				5F0B492C1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift */,
+				5F0396091E40661A00BA7E42 /* ClosureValuesConverter.swift */,
+				5F1322791E47B6100071401C /* SwiftyArrayTypeExtractor.swift */,
 			);
 			path = DeSerializer;
 			sourceTree = "<group>";
@@ -80,10 +150,22 @@
 		5F0B49191E3FA67500CB4023 /* DeSerializerTests */ = {
 			isa = PBXGroup;
 			children = (
-				5F0B491A1E3FA67500CB4023 /* DeSerializerTests.swift */,
+				5F0396321E407B5100BA7E42 /* JSON */,
+				5F048AFC1E486845005A85B7 /* CommonClasses.swift */,
+				5F0B491A1E3FA67500CB4023 /* DefaultDeserializerTests.swift */,
+				5F048AFA1E486810005A85B7 /* DeSerializerTests.swift */,
 				5F0B491C1E3FA67500CB4023 /* Info.plist */,
 			);
 			path = DeSerializerTests;
+			sourceTree = "<group>";
+		};
+		E97B0D25D2A84D4E9344A7E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91055E89949DC67AD724FBA7 /* Pods_DeSerializer.framework */,
+				039CC2BB6366F6AFA45873CF /* Pods_DeSerializerTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F0B49201E3FA67500CB4023 /* Build configuration list for PBXNativeTarget "DeSerializer" */;
 			buildPhases = (
+				D5F8C2143710007F68B02782 /* [CP] Check Pods Manifest.lock */,
 				5F0B49071E3FA67500CB4023 /* Sources */,
 				5F0B49081E3FA67500CB4023 /* Frameworks */,
 				5F0B49091E3FA67500CB4023 /* Headers */,
 				5F0B490A1E3FA67500CB4023 /* Resources */,
+				7BE06C1EB73687310304ED6D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F0B49231E3FA67500CB4023 /* Build configuration list for PBXNativeTarget "DeSerializerTests" */;
 			buildPhases = (
+				F95D19B00D55D92C856FD51A /* [CP] Check Pods Manifest.lock */,
 				5F0B49111E3FA67500CB4023 /* Sources */,
 				5F0B49121E3FA67500CB4023 /* Frameworks */,
 				5F0B49131E3FA67500CB4023 /* Resources */,
+				14D26766AC93F9E1AC92A7E9 /* [CP] Embed Pods Frameworks */,
+				C13067598098B61BDBD2CFA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +236,7 @@
 					5F0B490B1E3FA67500CB4023 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RCNGG8L4U7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5F0B49141E3FA67500CB4023 = {
@@ -188,16 +276,106 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F03963A1E407B5100BA7E42 /* NestedObjectWithArray.json in Resources */,
+				5F0396381E407B5100BA7E42 /* Array.json in Resources */,
+				5F03963B1E407B5100BA7E42 /* SimpleObject.json in Resources */,
+				5F0396391E407B5100BA7E42 /* NestedObject.json in Resources */,
+				5F03963C1E407B5100BA7E42 /* SimpleObject2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14D26766AC93F9E1AC92A7E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeSerializerTests/Pods-DeSerializerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BE06C1EB73687310304ED6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeSerializer/Pods-DeSerializer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C13067598098B61BDBD2CFA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeSerializerTests/Pods-DeSerializerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F8C2143710007F68B02782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F95D19B00D55D92C856FD51A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F0B49071E3FA67500CB4023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0B49291E3FAAE900CB4023 /* DeSerializerProtocol.swift in Sources */,
+				5F0B49271E3FA98400CB4023 /* DefaultDeSerializer.swift in Sources */,
+				5F0396311E4074F100BA7E42 /* DeSerializer.swift in Sources */,
+				5F0B492D1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift in Sources */,
+				5F0B492F1E3FD36000CB4023 /* Typeable.swift in Sources */,
+				5F13227A1E47B6100071401C /* SwiftyArrayTypeExtractor.swift in Sources */,
+				5F03960A1E40661A00BA7E42 /* ClosureValuesConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +383,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0B491B1E3FA67500CB4023 /* DeSerializerTests.swift in Sources */,
+				5F048AFB1E486810005A85B7 /* DeSerializerTests.swift in Sources */,
+				5F048AFD1E486845005A85B7 /* CommonClasses.swift in Sources */,
+				5F0B491B1E3FA67500CB4023 /* DefaultDeserializerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +447,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -312,6 +493,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -321,7 +503,9 @@
 		};
 		5F0B49211E3FA67500CB4023 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B74C79F072614AA2F8EDE2A2 /* Pods-DeSerializer.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RCNGG8L4U7;
@@ -334,13 +518,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kappacino.inc.DeSerializer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5F0B49221E3FA67500CB4023 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822420A462ADD36D9386F899 /* Pods-DeSerializer.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RCNGG8L4U7;
@@ -359,7 +546,9 @@
 		};
 		5F0B49241E3FA67500CB4023 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEA8DED6B68CAF89539A6E2A /* Pods-DeSerializerTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = RCNGG8L4U7;
 				INFOPLIST_FILE = DeSerializerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -371,7 +560,9 @@
 		};
 		5F0B49251E3FA67500CB4023 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CDA72B3C666300CDAF6B63F /* Pods-DeSerializerTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = RCNGG8L4U7;
 				INFOPLIST_FILE = DeSerializerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +591,7 @@
 				5F0B49221E3FA67500CB4023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F0B49231E3FA67500CB4023 /* Build configuration list for PBXNativeTarget "DeSerializerTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +600,7 @@
 				5F0B49251E3FA67500CB4023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

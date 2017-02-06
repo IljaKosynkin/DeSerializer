@@ -1,0 +1,6 @@
+framework module KlappaDeSerializer {
+  umbrella header "KlappaDeSerializer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - KlappaDeSerializer (1.0.1)
+
+DEPENDENCIES:
+  - KlappaDeSerializer (from `/Users/iljakosynkin/Documents/Projects/KlappaDeSerializer`)
+
+EXTERNAL SOURCES:
+  KlappaDeSerializer:
+    :path: /Users/iljakosynkin/Documents/Projects/KlappaDeSerializer
+
+SPEC CHECKSUMS:
+  KlappaDeSerializer: 4cc90537f109781b7bf13c89a4cc99157684391b
+
+PODFILE CHECKSUM: 9c8f60e7d4830ec03c9f2a21a9e10d9cd42fbc49
+
+COCOAPODS: 1.2.0.beta.3
