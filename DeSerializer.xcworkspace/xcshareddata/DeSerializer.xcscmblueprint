@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5480A82A98A510F3639A85786A5C2AA6942AC2AF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3C7252307A954DC5200B8D010797FD5B866E2401" : 9223372036854775807,
+    "5480A82A98A510F3639A85786A5C2AA6942AC2AF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D85C0865-176D-4ED6-ACF3-2E1E7B887E7A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3C7252307A954DC5200B8D010797FD5B866E2401" : "KlappaDeSerializer\/",
+    "5480A82A98A510F3639A85786A5C2AA6942AC2AF" : "DeSerializer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DeSerializer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DeSerializer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IljaKosynkin\/KlappaDeSerializer",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3C7252307A954DC5200B8D010797FD5B866E2401"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IljaKosynkin\/DeSerializer",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5480A82A98A510F3639A85786A5C2AA6942AC2AF"
+    }
+  ]
+}

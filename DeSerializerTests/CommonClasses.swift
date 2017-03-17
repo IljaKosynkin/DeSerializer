@@ -12,6 +12,10 @@ import DeSerializer
 class SimpleObject: NSObject {
     var name: String!
     var price: NSDecimalNumber!
+    
+    override static func getRequiredFields() -> [Any] {
+        return ["name"]
+    }
 }
 
 class Thumbnail: NSObject {

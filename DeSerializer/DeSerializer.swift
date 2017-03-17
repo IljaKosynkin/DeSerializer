@@ -13,24 +13,24 @@ public class DeSerializer: NSObject {
     private static var defaultDeserializer: DeSerializerProtocol = DefaultDeSerializer()
     private static var alreadySet = false
     
-    public static func deserialize<T: KLPDeserializable>(json: String) -> T {
+    public static func deserialize<T: KLPDeserializable>(json: String) -> T? {
         if !alreadySet { KLPDeserializer.setDefault(defaultDeserializer); alreadySet = true }
-        return KLPDeserializer.deserialize(withString: T.self, jsonString: json) as! T
+        return KLPDeserializer.deserialize(withString: T.self, jsonString: json) as? T
     }
     
-    public static func deserialize<T: KLPDeserializable>(json: String) -> [T] {
+    public static func deserialize<T: KLPDeserializable>(json: String) -> [T]? {
         if !alreadySet { KLPDeserializer.setDefault(defaultDeserializer); alreadySet = true }
-        return KLPDeserializer.deserialize(withString: T.self, jsonString: json) as! [T]
+        return KLPDeserializer.deserialize(withString: T.self, jsonString: json) as? [T]
     }
     
-    public static func deserialize<T: KLPDeserializable>(json: [[String: Any]]) -> [T] {
+    public static func deserialize<T: KLPDeserializable>(json: [[String: Any]]) -> [T]? {
         if !alreadySet { KLPDeserializer.setDefault(defaultDeserializer); alreadySet = true }
-        return KLPDeserializer.deserialize(withArray: T.self, array: json) as! [T]
+        return KLPDeserializer.deserialize(withArray: T.self, array: json) as? [T]
     }
     
-    public static func deserialize<T: KLPDeserializable>(json: [String: Any]) -> T {
+    public static func deserialize<T: KLPDeserializable>(json: [String: Any]) -> T? {
         if !alreadySet { KLPDeserializer.setDefault(defaultDeserializer); alreadySet = true }
-        return KLPDeserializer.deserialize(withDictionary: T.self, jsonDictionary: json) as! T
+        return KLPDeserializer.deserialize(withDictionary: T.self, jsonDictionary: json) as? T
     }
     
     private static func getPointer<T>(type: T.Type?) -> AutoreleasingUnsafeMutablePointer<AnyClass?>? {
@@ -40,9 +40,9 @@ public class DeSerializer: NSObject {
         return AutoreleasingUnsafeMutablePointer<AnyClass?>.init(&cls)
     }
     
-    public static func deserialize<T: KLPDeserializable, Context: KLPDeserializable>(json: [String: Any], forField: String, inContext: Context.Type?) -> T {
+    public static func deserialize<T: KLPDeserializable, Context: KLPDeserializable>(json: [String: Any], forField: String, inContext: Context.Type?) -> T? {
         if !alreadySet { KLPDeserializer.setDefault(defaultDeserializer); alreadySet = true }
-        return KLPDeserializer.deserializeWithDictionary(forField: T.self, jsonDictionary: json, field: forField, context: getPointer(type: inContext)) as! T
+        return KLPDeserializer.deserializeWithDictionary(forField: T.self, jsonDictionary: json, field: forField, context: getPointer(type: inContext)) as? T
     }
     
     public static func setDefaultDeserializer(deserializer: DeSerializerProtocol) -> DeSerializer.Type {

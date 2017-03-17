@@ -17,8 +17,8 @@ public class DefaultDeSerializer: KLPStandardDeserializer, DeSerializerProtocol 
         extractor = SwiftyArrayTypeExtractor()
     }
     
-    public func deserialize<T: KLPDeserializable>(json: [String: Any]) -> T {
-        return super.deserialize(T.self, json: json) as! T
+    public func deserialize<T: KLPDeserializable>(json: [String: Any]) -> T? {
+        return super.deserialize(T.self, json: json) as? T
     }
      
     private func getPointer<T>(type: T.Type?) -> AutoreleasingUnsafeMutablePointer<AnyClass?>? {

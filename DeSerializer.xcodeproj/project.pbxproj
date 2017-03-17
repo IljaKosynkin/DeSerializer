@@ -25,6 +25,8 @@
 		5F0B492D1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B492C1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift */; };
 		5F0B492F1E3FD36000CB4023 /* Typeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B492E1E3FD36000CB4023 /* Typeable.swift */; };
 		5F13227A1E47B6100071401C /* SwiftyArrayTypeExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1322791E47B6100071401C /* SwiftyArrayTypeExtractor.swift */; };
+		5F4294DD1E7C608C00794181 /* SimpleObject3.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F4294DC1E7C608C00794181 /* SimpleObject3.json */; };
+		5F4294DF1E7C6B2400794181 /* PerformaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4294DE1E7C6B2400794181 /* PerformaceTests.swift */; };
 		7B169D844931BFB19FE7212A /* Pods_DeSerializerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039CC2BB6366F6AFA45873CF /* Pods_DeSerializerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		5F0B492C1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyFieldsRetriever.swift; sourceTree = "<group>"; };
 		5F0B492E1E3FD36000CB4023 /* Typeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typeable.swift; sourceTree = "<group>"; };
 		5F1322791E47B6100071401C /* SwiftyArrayTypeExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyArrayTypeExtractor.swift; sourceTree = "<group>"; };
+		5F4294DC1E7C608C00794181 /* SimpleObject3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SimpleObject3.json; sourceTree = "<group>"; };
+		5F4294DE1E7C6B2400794181 /* PerformaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformaceTests.swift; sourceTree = "<group>"; };
 		822420A462ADD36D9386F899 /* Pods-DeSerializer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeSerializer.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeSerializer/Pods-DeSerializer.release.xcconfig"; sourceTree = "<group>"; };
 		91055E89949DC67AD724FBA7 /* Pods_DeSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeSerializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CDA72B3C666300CDAF6B63F /* Pods-DeSerializerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeSerializerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeSerializerTests/Pods-DeSerializerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				5F0396351E407B5100BA7E42 /* NestedObjectWithArray.json */,
 				5F0396361E407B5100BA7E42 /* SimpleObject.json */,
 				5F0396371E407B5100BA7E42 /* SimpleObject2.json */,
+				5F4294DC1E7C608C00794181 /* SimpleObject3.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				5F048AFC1E486845005A85B7 /* CommonClasses.swift */,
 				5F0B491A1E3FA67500CB4023 /* DefaultDeserializerTests.swift */,
 				5F048AFA1E486810005A85B7 /* DeSerializerTests.swift */,
+				5F4294DE1E7C6B2400794181 /* PerformaceTests.swift */,
 				5F0B491C1E3FA67500CB4023 /* Info.plist */,
 			);
 			path = DeSerializerTests;
@@ -280,6 +286,7 @@
 				5F0396381E407B5100BA7E42 /* Array.json in Resources */,
 				5F03963B1E407B5100BA7E42 /* SimpleObject.json in Resources */,
 				5F0396391E407B5100BA7E42 /* NestedObject.json in Resources */,
+				5F4294DD1E7C608C00794181 /* SimpleObject3.json in Resources */,
 				5F03963C1E407B5100BA7E42 /* SimpleObject2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +393,7 @@
 				5F048AFB1E486810005A85B7 /* DeSerializerTests.swift in Sources */,
 				5F048AFD1E486845005A85B7 /* CommonClasses.swift in Sources */,
 				5F0B491B1E3FA67500CB4023 /* DefaultDeserializerTests.swift in Sources */,
+				5F4294DF1E7C6B2400794181 /* PerformaceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

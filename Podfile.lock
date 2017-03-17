@@ -1,5 +1,5 @@
 PODS:
-  - KlappaDeSerializer (1.0.1)
+  - KlappaDeSerializer (1.0.2)
 
 DEPENDENCIES:
   - KlappaDeSerializer (from `/Users/iljakosynkin/Documents/Projects/KlappaDeSerializer`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: /Users/iljakosynkin/Documents/Projects/KlappaDeSerializer
 
 SPEC CHECKSUMS:
-  KlappaDeSerializer: 4cc90537f109781b7bf13c89a4cc99157684391b
+  KlappaDeSerializer: 4982cc0e3fffdabfe84dfb5d4d6cd409127f68d4
 
 PODFILE CHECKSUM: 9c8f60e7d4830ec03c9f2a21a9e10d9cd42fbc49
 

@@ -12,6 +12,8 @@
 
 #import "KlappaDeSerializer.h"
 #import "KLPDeserializer.h"
+#import "KLPStringToDecimalNumberConverter.h"
+#import "KLPStringToNumberConverter.h"
 #import "KLPStringToURLConverter.h"
 #import "KLPStandardDeserializer.h"
 #import "KLPArrayTypeExtractor.h"

@@ -7,37 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A691EE86F24A8DF990D144BAD6A2260 /* KLPValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BD437D1EC750682617F8640440E3A5B3 /* KLPValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15446DEDA14B144F7F50D526D75E5CA9 /* KLPValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = C499D1CBFFC087B8676E65479DF67F2D /* KLPValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A00ADDB7FA24520DBB534955A923C91 /* KLPFieldsRetriever.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0188A545B80198F904F0511C809BFB /* KLPFieldsRetriever.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F9BC92BB630BF0359DBAB14A1AC2EF4 /* Pods-DeSerializer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E665AEAA42BF1EA726A192C8087E125 /* Pods-DeSerializer-dummy.m */; };
-		33FAF0F7DC7F2C6555DBE255446CE62D /* KlappaDeSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E1151FB7B8AD0505323A0C96FC9693 /* KlappaDeSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39115DD9BFFCB4096DEC811D78B3B0E3 /* KLPDefaultArrayTypeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B61D5A1F3B0CADD680593B0BB678EDC /* KLPDefaultArrayTypeExtractor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3DE15192EE7540690E57771E31B54B7A /* KLPArrayTypeExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = BA49106336B816EBA897EA4371BB0F03 /* KLPArrayTypeExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		486D1EEEC72956292DAE8DACB7D1CDBF /* KLPNamingStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D175EFD5E1FC519D655419D855E16A /* KLPNamingStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5164B804A167E4DD2CB71425D8054E3F /* KLPDeserializerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 55883C0333727D03491C30EAD8EBB5A0 /* KLPDeserializerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29A5A29E93CD95E03837FC926B6D988E /* KLPStringToNumberConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D52E5F8DA71B9F93F8C7D841CEE4E9 /* KLPStringToNumberConverter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		36818E507E06072FE69EC17458B2CEA7 /* KLPArrayTypeExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7DF2DF31899D610DD190DDAD0B1A52 /* KLPArrayTypeExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41251C1D9784CB5497874ED4C2869176 /* KLPStringToDecimalNumberConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AD7EE081D9D0ECD878DD28D4FF2D3E /* KLPStringToDecimalNumberConverter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		43D1ABCF915EFD912585170920382E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		44BAAAB0F2F8CA16C0D68BEE2152E97E /* KlappaDeSerializer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CB364225B85689192AF94047D9E03 /* KlappaDeSerializer-dummy.m */; };
+		490EC1EB70EEEAA2E9AE20120CEBDCC7 /* KLPDeserializerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 923FD6441248E1D63A43DEE8636E4DD9 /* KLPDeserializerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49F67839D1775643F6ACC9A873E524F3 /* KLPDefaultNamingStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4815EF0F313FE1B87E2E10107AE7ABE4 /* KLPDefaultNamingStrategy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4ABFF3B144AB871D0C0D6C522A053CA1 /* KLPDefaultFieldsRetriever.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD270577CFD5E0F368FB9CF75AC1516 /* KLPDefaultFieldsRetriever.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53488DADEB8F1A30522703E68CA2A78E /* KLPDefaultArrayTypeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9AE6DAE096F22229F3FB187B95BC7 /* KLPDefaultArrayTypeExtractor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56F9F30A504602B24B66C5B57E0E5656 /* KLPExplicitNamingStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1190B0D58CDC46253F9C43360C561E46 /* KLPExplicitNamingStrategy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5773147877BC24C531A2D65F38E8FF1C /* Pods-DeSerializer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FFFA9F3333D3E6730989018FCB7C50 /* Pods-DeSerializer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E1F37C4F91DFAB88B8316CFCF4D2772 /* KLPStandardDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E1DD55C8BDA828823964EA4FE4E4F8 /* KLPStandardDeserializer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		692D8F54B34F961540A19A0FFEA0DD9D /* KLPStandardDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F5B9A9803EBDF0ACDE70AED1FE8ADD /* KLPStandardDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69A287931C0F080D476E7F917AC9442A /* KLPExplicitNamingStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D56C2D36814381020B3DDE07D28ED /* KLPExplicitNamingStrategy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6D29ACC4F8BEB6C7FB01810340C62D54 /* KLPDefaultFieldsRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED756C53561BA15EFA617ACA922228 /* KLPDefaultFieldsRetriever.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5928DD4EDBE5A1F0404F9908A6D92B1C /* KLPDeserializable.h in Headers */ = {isa = PBXBuildFile; fileRef = F691C75407834F62BE930FCE2A9B80D6 /* KLPDeserializable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64B76704A29FDA3780FF7070E164DCB6 /* KlappaDeSerializer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8273E76F22AB593992DAEC75C27B3F0 /* KlappaDeSerializer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B5098E88C1642191E0473C5C6CC1AEF /* KLPDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 61877D07692388257CA1F3F8E3446C56 /* KLPDeserializer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6E7084A76A42D29AC9B282FE7E3626AD /* KLPStandardDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56267050E22A1B393C878D6F73AA6BA6 /* KLPStandardDeserializer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		773B72271DF4EEF979FBBCB107987E66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		792B3B9DF98E153246E41017B5E71F93 /* KLPConvertedTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA98E7D6E995CE26EA3FFDCE320BF0C /* KLPConvertedTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		867FDCE88E4C3940E7C5D2D1E37E82DC /* KLPConvertedTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = ECAC0CC47C1C2BA61DB1048BBCF48F3E /* KLPConvertedTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		871D6FA85B17943D3B70D87B9AE060E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		875F9000846B1215E1838ED8CB5B18A0 /* KLPDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CC0BFA1FAE0529EE35C4D6107DC9C0 /* KLPDeserializer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8FE18E4522CA7C36DC6ABA65B9581766 /* KLPFieldsRetriever.h in Headers */ = {isa = PBXBuildFile; fileRef = 9139901574AC2E82305AFEEC1BE23213 /* KLPFieldsRetriever.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9366EC6D9D5A612988D963E97E7D7F8B /* KlappaDeSerializer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4CB364225B85689192AF94047D9E03 /* KlappaDeSerializer-dummy.m */; };
-		9AE295FC04905A7FB9CB229813D7004B /* KLPDefaultArrayTypeExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F219B7E0FAB97A88E03A97A6EA6A00A /* KLPDefaultArrayTypeExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87458A08B3E2E69DF490B41B8DC20769 /* KLPStringToNumberConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B870920C0DDB31542D78C6BBCBC4B93 /* KLPStringToNumberConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87A5AAB49344C87074FD6BE014E4D7E1 /* KlappaDeSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F7B66132684C5BEC9544915E86F3D9 /* KlappaDeSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C51A745772386FF24A12DF3E1B12B44 /* KLPDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A52EE9EE8281700E21F62D6712D57EDD /* KLPDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97433AC2426E0D7520AA840B497A5CE4 /* KLPNamingStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BB6379920D3D4F80FAA71FE1C65C64 /* KLPNamingStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AF6716B0DBA11FCE78BD33A0F4BD11D /* Pods-DeSerializerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B838C7D5C480571C4D3319285A7C2CD /* Pods-DeSerializerTests-dummy.m */; };
-		9F12851DA228C470273946A0F1096A9C /* KLPDeserializable.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7B873CA269A13891B84E29EE0B479F /* KLPDeserializable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0116935BF2886AA89372A80B85CC02A /* KLPDefaultNamingStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E8DEB1E7FAF75593BA9B9EA5279E6A /* KLPDefaultNamingStrategy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A58D795BB978AA0FBF4D16F0010BA93B /* KlappaDeSerializer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8273E76F22AB593992DAEC75C27B3F0 /* KlappaDeSerializer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9EF0792A019EE6BA85C57FFDD19F708 /* KLPStringToURLConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF7278AC61A950A945F5E67E6A37C53 /* KLPStringToURLConverter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B5CDC54FE925D1B74CED8D8A609D64FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		BDDE3159EB72931883AA76B733791DF4 /* KLPStringToURLConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F8636682A6984E3ACF954BD417EA54 /* KLPStringToURLConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5086C5FC5DB22F8EAA3B2C555C100E1 /* KLPDefaultFieldsRetriever.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF1820901D51E9F7961DF4722E785B3 /* KLPDefaultFieldsRetriever.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C56D1E145019D603FCFE24A0F1027CA6 /* KLPExplicitNamingStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 023AFB6D776FE7C4F442136950DAA69C /* KLPExplicitNamingStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E0F612CA062B7E9DADD7D5B895D2280 /* KLPStringToURLConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCBA95FAFF5511A611463228BED742F /* KLPStringToURLConverter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A744041D97A5F6BE32138CE9FEF1565C /* KLPDefaultFieldsRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCCC26FC3CD51F5BE18F03D34615EF7 /* KLPDefaultFieldsRetriever.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C00783DC70A9C2DB744341B0C58AB745 /* KLPStandardDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7370303AC68CDD253A1BDA1C493A1E5B /* KLPStandardDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5AF207D0A0696F913D7D265CBA6B235 /* KLPExplicitNamingStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B936230920EF2F97658E033668AE74 /* KLPExplicitNamingStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA3EDFC347867031D8B5DB9EF554ACEA /* Pods-DeSerializerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F14CF0108D60CF3132B4DC0F08A2E45 /* Pods-DeSerializerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE1CA1C195780DB8BA75520A70ABEAD2 /* KLPDefaultNamingStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD21D096A3B723410D668C41591E422 /* KLPDefaultNamingStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFBACB28055EDD1C874CEB76EDB07323 /* KLPDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D38EE091EA86EE636DE8E74F1780F11 /* KLPDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA7A2017A0BF0E99FC48FC810008BB70 /* KLPDefaultArrayTypeExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FC7C9B97499976B489305F0CB2D8A2 /* KLPDefaultArrayTypeExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC83828992DA7551E5E687B06A4A468B /* KLPStringToDecimalNumberConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EDC7FF6445837FDBAEB2CC8B98BA624 /* KLPStringToDecimalNumberConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFA9F59BF57545D397713DDEAC8FD388 /* KLPStringToURLConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 92431A600DF35793F91345065F0628DC /* KLPStringToURLConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE880CD26EEB111ED2CC3FF6347CA4DD /* KLPDefaultNamingStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FFDCF339C78527F3B8476E800B99A7 /* KLPDefaultNamingStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,71 +49,75 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 49AA9FDFE21D55C785212BCB0D61F819;
+			remoteGlobalIDString = 87ADFD7109D6DB2CE4486FF19D605F39;
 			remoteInfo = KlappaDeSerializer;
 		};
 		E8327BC9001108A5EBF499784A258340 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 49AA9FDFE21D55C785212BCB0D61F819;
+			remoteGlobalIDString = 87ADFD7109D6DB2CE4486FF19D605F39;
 			remoteInfo = KlappaDeSerializer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		023AFB6D776FE7C4F442136950DAA69C /* KLPExplicitNamingStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPExplicitNamingStrategy.h; sourceTree = "<group>"; };
+		0FD270577CFD5E0F368FB9CF75AC1516 /* KLPDefaultFieldsRetriever.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDefaultFieldsRetriever.h; sourceTree = "<group>"; };
+		1190B0D58CDC46253F9C43360C561E46 /* KLPExplicitNamingStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPExplicitNamingStrategy.m; sourceTree = "<group>"; };
+		11FC7C9B97499976B489305F0CB2D8A2 /* KLPDefaultArrayTypeExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDefaultArrayTypeExtractor.h; sourceTree = "<group>"; };
 		12885E90F545B14499433E4C37C3EADE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15B5A6A87F06EEDE7A258766EF07C086 /* Pods_DeSerializerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DeSerializerTests.framework; path = "Pods-DeSerializerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		166E117FBAC5115ADA8140F742D263CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16D175EFD5E1FC519D655419D855E16A /* KLPNamingStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPNamingStrategy.h; sourceTree = "<group>"; };
-		19E1151FB7B8AD0505323A0C96FC9693 /* KlappaDeSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KlappaDeSerializer.h; sourceTree = "<group>"; };
+		1CCBA95FAFF5511A611463228BED742F /* KLPStringToURLConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPStringToURLConverter.m; sourceTree = "<group>"; };
 		1E665AEAA42BF1EA726A192C8087E125 /* Pods-DeSerializer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeSerializer-dummy.m"; sourceTree = "<group>"; };
 		247958C628877DD310127D9F4D5B7032 /* Pods-DeSerializer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DeSerializer-resources.sh"; sourceTree = "<group>"; };
+		26B936230920EF2F97658E033668AE74 /* KLPExplicitNamingStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPExplicitNamingStrategy.h; sourceTree = "<group>"; };
+		26C9AE6DAE096F22229F3FB187B95BC7 /* KLPDefaultArrayTypeExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPDefaultArrayTypeExtractor.m; sourceTree = "<group>"; };
 		26FFFA9F3333D3E6730989018FCB7C50 /* Pods-DeSerializer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeSerializer-umbrella.h"; sourceTree = "<group>"; };
 		2A2390C48D23EEF0AD592A0EB246C8AD /* Pods-DeSerializerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeSerializerTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2D38EE091EA86EE636DE8E74F1780F11 /* KLPDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDeserializer.h; sourceTree = "<group>"; };
-		2DD21D096A3B723410D668C41591E422 /* KLPDefaultNamingStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDefaultNamingStrategy.h; sourceTree = "<group>"; };
 		2F14CF0108D60CF3132B4DC0F08A2E45 /* Pods-DeSerializerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeSerializerTests-umbrella.h"; sourceTree = "<group>"; };
 		34A111DBE9D69134E613382603023358 /* Pods-DeSerializerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DeSerializerTests-resources.sh"; sourceTree = "<group>"; };
 		3B838C7D5C480571C4D3319285A7C2CD /* Pods-DeSerializerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeSerializerTests-dummy.m"; sourceTree = "<group>"; };
+		3BCCC26FC3CD51F5BE18F03D34615EF7 /* KLPDefaultFieldsRetriever.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPDefaultFieldsRetriever.m; sourceTree = "<group>"; };
+		44AD7EE081D9D0ECD878DD28D4FF2D3E /* KLPStringToDecimalNumberConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPStringToDecimalNumberConverter.m; sourceTree = "<group>"; };
+		4815EF0F313FE1B87E2E10107AE7ABE4 /* KLPDefaultNamingStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPDefaultNamingStrategy.m; sourceTree = "<group>"; };
 		4A5E5737BAB6D09A98BEAC9AF1661FE2 /* Pods-DeSerializerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeSerializerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AFA5B2E35EBDAED17E5E75C8FCEC91A /* KlappaDeSerializer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KlappaDeSerializer.modulemap; sourceTree = "<group>"; };
 		4B074CB1C85AAF83865C2849DCAED13C /* Pods-DeSerializer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DeSerializer.modulemap"; sourceTree = "<group>"; };
-		4DF1820901D51E9F7961DF4722E785B3 /* KLPDefaultFieldsRetriever.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDefaultFieldsRetriever.h; sourceTree = "<group>"; };
-		4F219B7E0FAB97A88E03A97A6EA6A00A /* KLPDefaultArrayTypeExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDefaultArrayTypeExtractor.h; sourceTree = "<group>"; };
 		4FBD4E68D80B97C4447A876CAFDDDE8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50F5B9A9803EBDF0ACDE70AED1FE8ADD /* KLPStandardDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPStandardDeserializer.h; sourceTree = "<group>"; };
-		55883C0333727D03491C30EAD8EBB5A0 /* KLPDeserializerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDeserializerProtocol.h; sourceTree = "<group>"; };
-		57E1DD55C8BDA828823964EA4FE4E4F8 /* KLPStandardDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPStandardDeserializer.m; sourceTree = "<group>"; };
-		5B61D5A1F3B0CADD680593B0BB678EDC /* KLPDefaultArrayTypeExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPDefaultArrayTypeExtractor.m; sourceTree = "<group>"; };
+		56267050E22A1B393C878D6F73AA6BA6 /* KLPStandardDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPStandardDeserializer.m; sourceTree = "<group>"; };
+		5B870920C0DDB31542D78C6BBCBC4B93 /* KLPStringToNumberConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPStringToNumberConverter.h; sourceTree = "<group>"; };
+		5EDC7FF6445837FDBAEB2CC8B98BA624 /* KLPStringToDecimalNumberConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPStringToDecimalNumberConverter.h; sourceTree = "<group>"; };
+		61877D07692388257CA1F3F8E3446C56 /* KLPDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPDeserializer.m; sourceTree = "<group>"; };
+		7370303AC68CDD253A1BDA1C493A1E5B /* KLPStandardDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPStandardDeserializer.h; sourceTree = "<group>"; };
 		765F10E5A93D450EDAAD23C13F6D368C /* Pods-DeSerializerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeSerializerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		76F8636682A6984E3ACF954BD417EA54 /* KLPStringToURLConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPStringToURLConverter.h; sourceTree = "<group>"; };
+		78D52E5F8DA71B9F93F8C7D841CEE4E9 /* KLPStringToNumberConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPStringToNumberConverter.m; sourceTree = "<group>"; };
 		7F3326BD38CB5A70472680E47D563C04 /* Pods-DeSerializer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeSerializer.debug.xcconfig"; sourceTree = "<group>"; };
 		8268EDB9F8629608CCE5C899E1108818 /* Pods-DeSerializerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DeSerializerTests.modulemap"; sourceTree = "<group>"; };
-		9139901574AC2E82305AFEEC1BE23213 /* KLPFieldsRetriever.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPFieldsRetriever.h; sourceTree = "<group>"; };
 		917AEC0940AA92DF53B4DC6ED42C91E5 /* Pods-DeSerializer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeSerializer.release.xcconfig"; sourceTree = "<group>"; };
+		923FD6441248E1D63A43DEE8636E4DD9 /* KLPDeserializerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDeserializerProtocol.h; sourceTree = "<group>"; };
+		92431A600DF35793F91345065F0628DC /* KLPStringToURLConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPStringToURLConverter.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A7B873CA269A13891B84E29EE0B479F /* KLPDeserializable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDeserializable.h; sourceTree = "<group>"; };
+		95BB6379920D3D4F80FAA71FE1C65C64 /* KLPNamingStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPNamingStrategy.h; sourceTree = "<group>"; };
 		9B7B0CD0B7F3B0C37FC5F4E50995FE74 /* KlappaDeSerializer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KlappaDeSerializer-prefix.pch"; sourceTree = "<group>"; };
 		9C2D756CC82663D0C49DA106AA26200C /* Pods-DeSerializer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeSerializer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A1E8DEB1E7FAF75593BA9B9EA5279E6A /* KLPDefaultNamingStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPDefaultNamingStrategy.m; sourceTree = "<group>"; };
+		A52EE9EE8281700E21F62D6712D57EDD /* KLPDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDeserializer.h; sourceTree = "<group>"; };
 		A8273E76F22AB593992DAEC75C27B3F0 /* KlappaDeSerializer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KlappaDeSerializer-umbrella.h"; sourceTree = "<group>"; };
-		A90D56C2D36814381020B3DDE07D28ED /* KLPExplicitNamingStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPExplicitNamingStrategy.m; sourceTree = "<group>"; };
 		AB72BDB2FD3EBB585A82E0DD2AEE0930 /* KlappaDeSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KlappaDeSerializer.framework; path = KlappaDeSerializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7DF2DF31899D610DD190DDAD0B1A52 /* KLPArrayTypeExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPArrayTypeExtractor.h; sourceTree = "<group>"; };
 		ADDE05FB89F870A60A4E7EB56C10DE01 /* Pods-DeSerializerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeSerializerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5FFDCF339C78527F3B8476E800B99A7 /* KLPDefaultNamingStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDefaultNamingStrategy.h; sourceTree = "<group>"; };
 		B604821C604FFA9BCE84FE65FF3E1C92 /* KlappaDeSerializer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KlappaDeSerializer.xcconfig; sourceTree = "<group>"; };
-		BA49106336B816EBA897EA4371BB0F03 /* KLPArrayTypeExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPArrayTypeExtractor.h; sourceTree = "<group>"; };
-		BCED756C53561BA15EFA617ACA922228 /* KLPDefaultFieldsRetriever.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPDefaultFieldsRetriever.m; sourceTree = "<group>"; };
-		BD437D1EC750682617F8640440E3A5B3 /* KLPValueConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPValueConverter.h; sourceTree = "<group>"; };
-		C5CC0BFA1FAE0529EE35C4D6107DC9C0 /* KLPDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPDeserializer.m; sourceTree = "<group>"; };
-		CAA98E7D6E995CE26EA3FFDCE320BF0C /* KLPConvertedTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPConvertedTypes.h; sourceTree = "<group>"; };
+		BA0188A545B80198F904F0511C809BFB /* KLPFieldsRetriever.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPFieldsRetriever.h; sourceTree = "<group>"; };
+		C499D1CBFFC087B8676E65479DF67F2D /* KLPValueConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPValueConverter.h; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D1E8A8AD8B28721E0CE004C7A698109A /* Pods-DeSerializer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeSerializer-acknowledgements.plist"; sourceTree = "<group>"; };
 		D9D81AD6D5C09839B75A53C5D2C88D6C /* Pods-DeSerializerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DeSerializerTests-frameworks.sh"; sourceTree = "<group>"; };
+		E5F7B66132684C5BEC9544915E86F3D9 /* KlappaDeSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KlappaDeSerializer.h; sourceTree = "<group>"; };
+		ECAC0CC47C1C2BA61DB1048BBCF48F3E /* KLPConvertedTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPConvertedTypes.h; sourceTree = "<group>"; };
 		ED4CB364225B85689192AF94047D9E03 /* KlappaDeSerializer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KlappaDeSerializer-dummy.m"; sourceTree = "<group>"; };
+		F691C75407834F62BE930FCE2A9B80D6 /* KLPDeserializable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KLPDeserializable.h; sourceTree = "<group>"; };
 		FA023DAEA55CA1F59CF24BBDE4E84940 /* Pods_DeSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DeSerializer.framework; path = "Pods-DeSerializer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAF7278AC61A950A945F5E67E6A37C53 /* KLPStringToURLConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KLPStringToURLConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +129,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5E0F8EAD1E614B1CAF6A9266C06E53E /* Frameworks */ = {
+		E3C6F85F89BA53F05D692C0348718236 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CDC54FE925D1B74CED8D8A609D64FF /* Foundation.framework in Frameworks */,
+				43D1ABCF915EFD912585170920382E8C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,53 +148,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		303AFF5C12C3AD14B335F90328361347 /* Strategies */ = {
+		1A9A38BFA07C0D339C084630D5A0296D /* Strategies */ = {
 			isa = PBXGroup;
 			children = (
-				2DD21D096A3B723410D668C41591E422 /* KLPDefaultNamingStrategy.h */,
-				A1E8DEB1E7FAF75593BA9B9EA5279E6A /* KLPDefaultNamingStrategy.m */,
-				023AFB6D776FE7C4F442136950DAA69C /* KLPExplicitNamingStrategy.h */,
-				A90D56C2D36814381020B3DDE07D28ED /* KLPExplicitNamingStrategy.m */,
+				B5FFDCF339C78527F3B8476E800B99A7 /* KLPDefaultNamingStrategy.h */,
+				4815EF0F313FE1B87E2E10107AE7ABE4 /* KLPDefaultNamingStrategy.m */,
+				26B936230920EF2F97658E033668AE74 /* KLPExplicitNamingStrategy.h */,
+				1190B0D58CDC46253F9C43360C561E46 /* KLPExplicitNamingStrategy.m */,
 			);
 			name = Strategies;
 			path = Strategies;
-			sourceTree = "<group>";
-		};
-		370871D5D3ECCB9603044E4ECA293419 /* Converters */ = {
-			isa = PBXGroup;
-			children = (
-				76F8636682A6984E3ACF954BD417EA54 /* KLPStringToURLConverter.h */,
-				FAF7278AC61A950A945F5E67E6A37C53 /* KLPStringToURLConverter.m */,
-			);
-			name = Converters;
-			path = Converters;
-			sourceTree = "<group>";
-		};
-		3A9C772DC6227CF8BB0F8A0DAD719053 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				CAA98E7D6E995CE26EA3FFDCE320BF0C /* KLPConvertedTypes.h */,
-				4F219B7E0FAB97A88E03A97A6EA6A00A /* KLPDefaultArrayTypeExtractor.h */,
-				5B61D5A1F3B0CADD680593B0BB678EDC /* KLPDefaultArrayTypeExtractor.m */,
-				4DF1820901D51E9F7961DF4722E785B3 /* KLPDefaultFieldsRetriever.h */,
-				BCED756C53561BA15EFA617ACA922228 /* KLPDefaultFieldsRetriever.m */,
-			);
-			name = Utils;
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		427CE6DC92E85E1D1748E7C880BC2092 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				BA49106336B816EBA897EA4371BB0F03 /* KLPArrayTypeExtractor.h */,
-				9A7B873CA269A13891B84E29EE0B479F /* KLPDeserializable.h */,
-				55883C0333727D03491C30EAD8EBB5A0 /* KLPDeserializerProtocol.h */,
-				9139901574AC2E82305AFEEC1BE23213 /* KLPFieldsRetriever.h */,
-				16D175EFD5E1FC519D655419D855E16A /* KLPNamingStrategy.h */,
-				BD437D1EC750682617F8640440E3A5B3 /* KLPValueConverter.h */,
-			);
-			name = Protocols;
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		4458C46CAA3A8EF9748E158147A895AE /* Support Files */ = {
@@ -201,6 +172,16 @@
 			);
 			name = "Support Files";
 			path = "../DeSerializer/Pods/Target Support Files/KlappaDeSerializer";
+			sourceTree = "<group>";
+		};
+		4FC52F9B3BFCB39F1D519BFC0E0D346F /* Deserializators */ = {
+			isa = PBXGroup;
+			children = (
+				7370303AC68CDD253A1BDA1C493A1E5B /* KLPStandardDeserializer.h */,
+				56267050E22A1B393C878D6F73AA6BA6 /* KLPStandardDeserializer.m */,
+			);
+			name = Deserializators;
+			path = Deserializators;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -239,30 +220,32 @@
 			);
 			sourceTree = "<group>";
 		};
-		8F35506162005A201CA191E95DDA7455 /* Deserializators */ = {
+		7E3DFB3BB4D69CAE1B46E180B727180E /* Converters */ = {
 			isa = PBXGroup;
 			children = (
-				50F5B9A9803EBDF0ACDE70AED1FE8ADD /* KLPStandardDeserializer.h */,
-				57E1DD55C8BDA828823964EA4FE4E4F8 /* KLPStandardDeserializer.m */,
+				5EDC7FF6445837FDBAEB2CC8B98BA624 /* KLPStringToDecimalNumberConverter.h */,
+				44AD7EE081D9D0ECD878DD28D4FF2D3E /* KLPStringToDecimalNumberConverter.m */,
+				5B870920C0DDB31542D78C6BBCBC4B93 /* KLPStringToNumberConverter.h */,
+				78D52E5F8DA71B9F93F8C7D841CEE4E9 /* KLPStringToNumberConverter.m */,
+				92431A600DF35793F91345065F0628DC /* KLPStringToURLConverter.h */,
+				1CCBA95FAFF5511A611463228BED742F /* KLPStringToURLConverter.m */,
 			);
-			name = Deserializators;
-			path = Deserializators;
+			name = Converters;
+			path = Converters;
 			sourceTree = "<group>";
 		};
-		97611222FC60995BF326ED7AA86F3F66 /* KlappaDeSerializer */ = {
+		92880112C7FD5BE00DF1B87A37908EC8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				19E1151FB7B8AD0505323A0C96FC9693 /* KlappaDeSerializer.h */,
-				2D38EE091EA86EE636DE8E74F1780F11 /* KLPDeserializer.h */,
-				C5CC0BFA1FAE0529EE35C4D6107DC9C0 /* KLPDeserializer.m */,
-				370871D5D3ECCB9603044E4ECA293419 /* Converters */,
-				8F35506162005A201CA191E95DDA7455 /* Deserializators */,
-				427CE6DC92E85E1D1748E7C880BC2092 /* Protocols */,
-				303AFF5C12C3AD14B335F90328361347 /* Strategies */,
-				3A9C772DC6227CF8BB0F8A0DAD719053 /* Utils */,
+				AC7DF2DF31899D610DD190DDAD0B1A52 /* KLPArrayTypeExtractor.h */,
+				F691C75407834F62BE930FCE2A9B80D6 /* KLPDeserializable.h */,
+				923FD6441248E1D63A43DEE8636E4DD9 /* KLPDeserializerProtocol.h */,
+				BA0188A545B80198F904F0511C809BFB /* KLPFieldsRetriever.h */,
+				95BB6379920D3D4F80FAA71FE1C65C64 /* KLPNamingStrategy.h */,
+				C499D1CBFFC087B8676E65479DF67F2D /* KLPValueConverter.h */,
 			);
-			name = KlappaDeSerializer;
-			path = KlappaDeSerializer;
+			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		9D3F45422EC6C24AF6C5443A03CC300B /* Pods-DeSerializer */ = {
@@ -280,6 +263,19 @@
 			);
 			name = "Pods-DeSerializer";
 			path = "Target Support Files/Pods-DeSerializer";
+			sourceTree = "<group>";
+		};
+		B71CE2FC5426B0C4399A1C6C667E308F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC0CC47C1C2BA61DB1048BBCF48F3E /* KLPConvertedTypes.h */,
+				11FC7C9B97499976B489305F0CB2D8A2 /* KLPDefaultArrayTypeExtractor.h */,
+				26C9AE6DAE096F22229F3FB187B95BC7 /* KLPDefaultArrayTypeExtractor.m */,
+				0FD270577CFD5E0F368FB9CF75AC1516 /* KLPDefaultFieldsRetriever.h */,
+				3BCCC26FC3CD51F5BE18F03D34615EF7 /* KLPDefaultFieldsRetriever.m */,
+			);
+			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B9CDCAFA1B6712A3854211CB7AC2FF17 /* Products */ = {
@@ -300,10 +296,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE23F08E2EF1C5F8B9FC70688DD5C5F6 /* KlappaDeSerializer */ = {
+			isa = PBXGroup;
+			children = (
+				E5F7B66132684C5BEC9544915E86F3D9 /* KlappaDeSerializer.h */,
+				A52EE9EE8281700E21F62D6712D57EDD /* KLPDeserializer.h */,
+				61877D07692388257CA1F3F8E3446C56 /* KLPDeserializer.m */,
+				7E3DFB3BB4D69CAE1B46E180B727180E /* Converters */,
+				4FC52F9B3BFCB39F1D519BFC0E0D346F /* Deserializators */,
+				92880112C7FD5BE00DF1B87A37908EC8 /* Protocols */,
+				1A9A38BFA07C0D339C084630D5A0296D /* Strategies */,
+				B71CE2FC5426B0C4399A1C6C667E308F /* Utils */,
+			);
+			name = KlappaDeSerializer;
+			path = KlappaDeSerializer;
+			sourceTree = "<group>";
+		};
 		F3828D5C173D748A83DA431E92F06ACD /* KlappaDeSerializer */ = {
 			isa = PBXGroup;
 			children = (
-				97611222FC60995BF326ED7AA86F3F66 /* KlappaDeSerializer */,
+				DE23F08E2EF1C5F8B9FC70688DD5C5F6 /* KlappaDeSerializer */,
 				4458C46CAA3A8EF9748E158147A895AE /* Support Files */,
 			);
 			name = KlappaDeSerializer;
@@ -339,34 +351,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D34A1A8F862AD520BE3BB51C8BF273D7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A58D795BB978AA0FBF4D16F0010BA93B /* KlappaDeSerializer-umbrella.h in Headers */,
-				33FAF0F7DC7F2C6555DBE255446CE62D /* KlappaDeSerializer.h in Headers */,
-				3DE15192EE7540690E57771E31B54B7A /* KLPArrayTypeExtractor.h in Headers */,
-				792B3B9DF98E153246E41017B5E71F93 /* KLPConvertedTypes.h in Headers */,
-				9AE295FC04905A7FB9CB229813D7004B /* KLPDefaultArrayTypeExtractor.h in Headers */,
-				C5086C5FC5DB22F8EAA3B2C555C100E1 /* KLPDefaultFieldsRetriever.h in Headers */,
-				EE1CA1C195780DB8BA75520A70ABEAD2 /* KLPDefaultNamingStrategy.h in Headers */,
-				9F12851DA228C470273946A0F1096A9C /* KLPDeserializable.h in Headers */,
-				EFBACB28055EDD1C874CEB76EDB07323 /* KLPDeserializer.h in Headers */,
-				5164B804A167E4DD2CB71425D8054E3F /* KLPDeserializerProtocol.h in Headers */,
-				C56D1E145019D603FCFE24A0F1027CA6 /* KLPExplicitNamingStrategy.h in Headers */,
-				8FE18E4522CA7C36DC6ABA65B9581766 /* KLPFieldsRetriever.h in Headers */,
-				486D1EEEC72956292DAE8DACB7D1CDBF /* KLPNamingStrategy.h in Headers */,
-				692D8F54B34F961540A19A0FFEA0DD9D /* KLPStandardDeserializer.h in Headers */,
-				BDDE3159EB72931883AA76B733791DF4 /* KLPStringToURLConverter.h in Headers */,
-				1A691EE86F24A8DF990D144BAD6A2260 /* KLPValueConverter.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EF3546299B082465809BF0AE4E30D061 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DA3EDFC347867031D8B5DB9EF554ACEA /* Pods-DeSerializerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0850A51C9ECB12A94F3136124422C41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B76704A29FDA3780FF7070E164DCB6 /* KlappaDeSerializer-umbrella.h in Headers */,
+				87A5AAB49344C87074FD6BE014E4D7E1 /* KlappaDeSerializer.h in Headers */,
+				36818E507E06072FE69EC17458B2CEA7 /* KLPArrayTypeExtractor.h in Headers */,
+				867FDCE88E4C3940E7C5D2D1E37E82DC /* KLPConvertedTypes.h in Headers */,
+				EA7A2017A0BF0E99FC48FC810008BB70 /* KLPDefaultArrayTypeExtractor.h in Headers */,
+				4ABFF3B144AB871D0C0D6C522A053CA1 /* KLPDefaultFieldsRetriever.h in Headers */,
+				FE880CD26EEB111ED2CC3FF6347CA4DD /* KLPDefaultNamingStrategy.h in Headers */,
+				5928DD4EDBE5A1F0404F9908A6D92B1C /* KLPDeserializable.h in Headers */,
+				8C51A745772386FF24A12DF3E1B12B44 /* KLPDeserializer.h in Headers */,
+				490EC1EB70EEEAA2E9AE20120CEBDCC7 /* KLPDeserializerProtocol.h in Headers */,
+				C5AF207D0A0696F913D7D265CBA6B235 /* KLPExplicitNamingStrategy.h in Headers */,
+				1A00ADDB7FA24520DBB534955A923C91 /* KLPFieldsRetriever.h in Headers */,
+				97433AC2426E0D7520AA840B497A5CE4 /* KLPNamingStrategy.h in Headers */,
+				C00783DC70A9C2DB744341B0C58AB745 /* KLPStandardDeserializer.h in Headers */,
+				EC83828992DA7551E5E687B06A4A468B /* KLPStringToDecimalNumberConverter.h in Headers */,
+				87458A08B3E2E69DF490B41B8DC20769 /* KLPStringToNumberConverter.h in Headers */,
+				EFA9F59BF57545D397713DDEAC8FD388 /* KLPStringToURLConverter.h in Headers */,
+				15446DEDA14B144F7F50D526D75E5CA9 /* KLPValueConverter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,23 +405,6 @@
 			productReference = FA023DAEA55CA1F59CF24BBDE4E84940 /* Pods_DeSerializer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		49AA9FDFE21D55C785212BCB0D61F819 /* KlappaDeSerializer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 832867E0F79605E4E3D11B251C64E933 /* Build configuration list for PBXNativeTarget "KlappaDeSerializer" */;
-			buildPhases = (
-				AAA0C69EF83F336703554A7D23D68C8A /* Sources */,
-				E5E0F8EAD1E614B1CAF6A9266C06E53E /* Frameworks */,
-				D34A1A8F862AD520BE3BB51C8BF273D7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KlappaDeSerializer;
-			productName = KlappaDeSerializer;
-			productReference = AB72BDB2FD3EBB585A82E0DD2AEE0930 /* KlappaDeSerializer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		66DEE4F46C605C8DF2E7058A66968388 /* Pods-DeSerializerTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EE116A77BD797DBFD6C15F3EBBFBBE5 /* Build configuration list for PBXNativeTarget "Pods-DeSerializerTests" */;
@@ -424,6 +421,23 @@
 			name = "Pods-DeSerializerTests";
 			productName = "Pods-DeSerializerTests";
 			productReference = 15B5A6A87F06EEDE7A258766EF07C086 /* Pods_DeSerializerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87ADFD7109D6DB2CE4486FF19D605F39 /* KlappaDeSerializer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1F2C76235D3F3A0668121D698F2115 /* Build configuration list for PBXNativeTarget "KlappaDeSerializer" */;
+			buildPhases = (
+				C873974CDB333AB33D357CCC2B90AFAE /* Sources */,
+				E3C6F85F89BA53F05D692C0348718236 /* Frameworks */,
+				F0850A51C9ECB12A94F3136124422C41 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KlappaDeSerializer;
+			productName = KlappaDeSerializer;
+			productReference = AB72BDB2FD3EBB585A82E0DD2AEE0930 /* KlappaDeSerializer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -447,7 +461,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49AA9FDFE21D55C785212BCB0D61F819 /* KlappaDeSerializer */,
+				87ADFD7109D6DB2CE4486FF19D605F39 /* KlappaDeSerializer */,
 				4412E3581AE86A3CD282DCA47B5163D2 /* Pods-DeSerializer */,
 				66DEE4F46C605C8DF2E7058A66968388 /* Pods-DeSerializerTests */,
 			);
@@ -471,18 +485,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AAA0C69EF83F336703554A7D23D68C8A /* Sources */ = {
+		C873974CDB333AB33D357CCC2B90AFAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9366EC6D9D5A612988D963E97E7D7F8B /* KlappaDeSerializer-dummy.m in Sources */,
-				39115DD9BFFCB4096DEC811D78B3B0E3 /* KLPDefaultArrayTypeExtractor.m in Sources */,
-				6D29ACC4F8BEB6C7FB01810340C62D54 /* KLPDefaultFieldsRetriever.m in Sources */,
-				A0116935BF2886AA89372A80B85CC02A /* KLPDefaultNamingStrategy.m in Sources */,
-				875F9000846B1215E1838ED8CB5B18A0 /* KLPDeserializer.m in Sources */,
-				69A287931C0F080D476E7F917AC9442A /* KLPExplicitNamingStrategy.m in Sources */,
-				5E1F37C4F91DFAB88B8316CFCF4D2772 /* KLPStandardDeserializer.m in Sources */,
-				A9EF0792A019EE6BA85C57FFDD19F708 /* KLPStringToURLConverter.m in Sources */,
+				44BAAAB0F2F8CA16C0D68BEE2152E97E /* KlappaDeSerializer-dummy.m in Sources */,
+				53488DADEB8F1A30522703E68CA2A78E /* KLPDefaultArrayTypeExtractor.m in Sources */,
+				A744041D97A5F6BE32138CE9FEF1565C /* KLPDefaultFieldsRetriever.m in Sources */,
+				49F67839D1775643F6ACC9A873E524F3 /* KLPDefaultNamingStrategy.m in Sources */,
+				6B5098E88C1642191E0473C5C6CC1AEF /* KLPDeserializer.m in Sources */,
+				56F9F30A504602B24B66C5B57E0E5656 /* KLPExplicitNamingStrategy.m in Sources */,
+				6E7084A76A42D29AC9B282FE7E3626AD /* KLPStandardDeserializer.m in Sources */,
+				41251C1D9784CB5497874ED4C2869176 /* KLPStringToDecimalNumberConverter.m in Sources */,
+				29A5A29E93CD95E03837FC926B6D988E /* KLPStringToNumberConverter.m in Sources */,
+				9E0F612CA062B7E9DADD7D5B895D2280 /* KLPStringToURLConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,19 +508,19 @@
 		AE671638439A4FBF7DE7F9D4C00AA549 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KlappaDeSerializer;
-			target = 49AA9FDFE21D55C785212BCB0D61F819 /* KlappaDeSerializer */;
+			target = 87ADFD7109D6DB2CE4486FF19D605F39 /* KlappaDeSerializer */;
 			targetProxy = 61E7A97D5C2234FB8A6EB39F33E343F7 /* PBXContainerItemProxy */;
 		};
 		E6E946239C2A17E6FE2732277072C7F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KlappaDeSerializer;
-			target = 49AA9FDFE21D55C785212BCB0D61F819 /* KlappaDeSerializer */;
+			target = 87ADFD7109D6DB2CE4486FF19D605F39 /* KlappaDeSerializer */;
 			targetProxy = E8327BC9001108A5EBF499784A258340 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06DBBC7420E800899930B0E536415E64 /* Debug */ = {
+		009A0BEB38C02FA2BC351EF8E82C71C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B604821C604FFA9BCE84FE65FF3E1C92 /* KlappaDeSerializer.xcconfig */;
 			buildSettings = {
@@ -512,7 +528,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -525,7 +541,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/KlappaDeSerializer/KlappaDeSerializer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = KlappaDeSerializer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -534,7 +550,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		15C0AAACDFED07429CB938664C13ECC6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -606,38 +622,6 @@
 			};
 			name = Debug;
 		};
-		3E67E8E10C6466020B4C98AA7CDF940B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B604821C604FFA9BCE84FE65FF3E1C92 /* KlappaDeSerializer.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KlappaDeSerializer/KlappaDeSerializer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KlappaDeSerializer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KlappaDeSerializer/KlappaDeSerializer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = KlappaDeSerializer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -677,6 +661,38 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		83EE621D10F0326CA59B81CBE8C0EB7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B604821C604FFA9BCE84FE65FF3E1C92 /* KlappaDeSerializer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KlappaDeSerializer/KlappaDeSerializer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KlappaDeSerializer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KlappaDeSerializer/KlappaDeSerializer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KlappaDeSerializer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		868AEEC44BF5D82089B00E53994D07BC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -822,11 +838,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		832867E0F79605E4E3D11B251C64E933 /* Build configuration list for PBXNativeTarget "KlappaDeSerializer" */ = {
+		DA1F2C76235D3F3A0668121D698F2115 /* Build configuration list for PBXNativeTarget "KlappaDeSerializer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06DBBC7420E800899930B0E536415E64 /* Debug */,
-				3E67E8E10C6466020B4C98AA7CDF940B /* Release */,
+				83EE621D10F0326CA59B81CBE8C0EB7C /* Debug */,
+				009A0BEB38C02FA2BC351EF8E82C71C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
