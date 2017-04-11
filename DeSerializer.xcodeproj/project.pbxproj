@@ -17,6 +17,7 @@
 		5F03963C1E407B5100BA7E42 /* SimpleObject2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F0396371E407B5100BA7E42 /* SimpleObject2.json */; };
 		5F048AFB1E486810005A85B7 /* DeSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F048AFA1E486810005A85B7 /* DeSerializerTests.swift */; };
 		5F048AFD1E486845005A85B7 /* CommonClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F048AFC1E486845005A85B7 /* CommonClasses.swift */; };
+		5F077DC01E9CE7E700EE245F /* Ancestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F077DBF1E9CE7E700EE245F /* Ancestor.swift */; };
 		5F0B49161E3FA67500CB4023 /* DeSerializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0B490C1E3FA67500CB4023 /* DeSerializer.framework */; };
 		5F0B491B1E3FA67500CB4023 /* DefaultDeserializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B491A1E3FA67500CB4023 /* DefaultDeserializerTests.swift */; };
 		5F0B491D1E3FA67500CB4023 /* DeSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0B490F1E3FA67500CB4023 /* DeSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +53,7 @@
 		5F0396371E407B5100BA7E42 /* SimpleObject2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SimpleObject2.json; sourceTree = "<group>"; };
 		5F048AFA1E486810005A85B7 /* DeSerializerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeSerializerTests.swift; sourceTree = "<group>"; };
 		5F048AFC1E486845005A85B7 /* CommonClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonClasses.swift; sourceTree = "<group>"; };
+		5F077DBF1E9CE7E700EE245F /* Ancestor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ancestor.swift; sourceTree = "<group>"; };
 		5F0B490C1E3FA67500CB4023 /* DeSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeSerializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F0B490F1E3FA67500CB4023 /* DeSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeSerializer.h; sourceTree = "<group>"; };
 		5F0B49101E3FA67500CB4023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				5F0B492C1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift */,
 				5F0396091E40661A00BA7E42 /* ClosureValuesConverter.swift */,
 				5F1322791E47B6100071401C /* SwiftyArrayTypeExtractor.swift */,
+				5F077DBF1E9CE7E700EE245F /* Ancestor.swift */,
 			);
 			path = DeSerializer;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F077DC01E9CE7E700EE245F /* Ancestor.swift in Sources */,
 				5F0B49291E3FAAE900CB4023 /* DeSerializerProtocol.swift in Sources */,
 				5F0B49271E3FA98400CB4023 /* DefaultDeSerializer.swift in Sources */,
 				5F0396311E4074F100BA7E42 /* DeSerializer.swift in Sources */,

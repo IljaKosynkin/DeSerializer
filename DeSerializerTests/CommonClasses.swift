@@ -8,29 +8,6 @@
 
 import Foundation
 import DeSerializer
-import KlappaDeSerializer
-
-class Ancestor: NSObject, KLPDeserializable {
-    public static func getNamingStrategy() -> KLPNamingStrategy? {
-        return nil
-    }
-
-    required override init() {
-        super.init()
-    }
-    
-    class func getRequiredFields() -> [Any]! {
-        return []
-    }
-    
-    static func getCustomFieldsMapping() -> [AnyHashable : Any]! {
-        return [:]
-    }
-    
-    static func getFieldsToClassMap() -> [AnyHashable : Any]! {
-        return [:]
-    }
-}
 
 class SimpleObject: Ancestor {
     var name: String!
@@ -57,7 +34,7 @@ class NestedObject: Ancestor {
     var fileFormat: String!
     var height: String!
     var width: String!
-    var thumbnail: Thumbnail!
+    var thumbnail: Thumbnail?
 }
 
 class Address: Ancestor {

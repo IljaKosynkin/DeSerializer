@@ -53,14 +53,14 @@ public class DeSerializer: NSObject {
         return KLPDeserializer.deserializeWithDictionary(forField: T.self, jsonDictionary: json, field: forField, context: getPointer(type: inContext)) as? T
     }
     
-    public static func setDefaultDeserializer(deserializer: DeSerializerProtocol) -> DeSerializer.Type {
+    @discardableResult public static func setDefaultDeserializer(deserializer: DeSerializerProtocol) -> DeSerializer.Type {
         postInit()
         defaultDeserializer = deserializer
         KLPDeserializer.setDefault(defaultDeserializer)
         return DeSerializer.self
     }
     
-    public static func registerDeserializer<Context: KLPDeserializable>(deserializer: DeSerializerProtocol, forField: String, forContext: Context.Type?) -> DeSerializer.Type {
+    @discardableResult public static func registerDeserializer<Context: KLPDeserializable>(deserializer: DeSerializerProtocol, forField: String, forContext: Context.Type?) -> DeSerializer.Type {
         postInit()
         var pointer: AutoreleasingUnsafeMutablePointer<KLPDeserializable.Type?>!
         if let type = forContext {
@@ -72,26 +72,26 @@ public class DeSerializer: NSObject {
         return DeSerializer.self
     }
     
-    public static func addValueConverter<Out: AnyObject>(converter: KLPValueConverter, fieldName: String, type: Type, output: Out.Type)  -> DeSerializer.Type {
+    @discardableResult public static func addValueConverter<Out: AnyObject>(converter: KLPValueConverter, fieldName: String, type: Type, output: Out.Type)  -> DeSerializer.Type {
         postInit()
         defaultDeserializer.add(converter: converter, fieldName: fieldName, type: type, output: output)
         
         return DeSerializer.self
     }
     
-    public static func addValueConverter<In: AnyObject, Out: AnyObject>(converter: KLPValueConverter, fieldName: String, input: In.Type, output: Out.Type) -> DeSerializer.Type {
+    @discardableResult public static func addValueConverter<In: AnyObject, Out: AnyObject>(converter: KLPValueConverter, fieldName: String, input: In.Type, output: Out.Type) -> DeSerializer.Type {
         postInit()
         defaultDeserializer.add(converter: converter, fieldName: fieldName, input: input, output: output)
         return DeSerializer.self
     }
     
-    public static func addValueConverter<In: AnyObject, Out: AnyObject>(fieldName: String, converterClosure: @escaping (In) -> Out) -> DeSerializer.Type {
+    @discardableResult public static func addValueConverter<In: AnyObject, Out: AnyObject>(fieldName: String, converterClosure: @escaping (In) -> Out) -> DeSerializer.Type {
         postInit()
         defaultDeserializer.add(fieldName: fieldName, converterClosure: converterClosure)
         return DeSerializer.self
     }
     
-    public static func setGlobalNamingStrategy(strategy: KLPNamingStrategy) -> DeSerializer.Type {
+    @discardableResult public static func setGlobalNamingStrategy(strategy: KLPNamingStrategy) -> DeSerializer.Type {
         postInit()
         KLPDeserializer.setGlobalNamingStrategy(strategy)
         return DeSerializer.self
