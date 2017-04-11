@@ -10,14 +10,15 @@ import Foundation
 import KlappaDeSerializer
 
 class SwiftyFieldsRetriever: KLPDefaultFieldsRetriever {
-    override func getFields(_ object: Any!) -> [AnyHashable : Any]! {
-        var fields = super.getFields(object)
+    
+    override func getFields(_ forClass: AnyClass!) -> [AnyHashable : Any]! {
+        var fields = super.getFields(forClass)
         
-        let mirror = Mirror(reflecting: object)
+        let mirror = Mirror(reflecting: forClass)
         for child in mirror.children {
             if fields?[child.label!] == nil {
                 if let type = type(of: child.value) as? Typeable.Type {
-                    fields?[child.label!] = type.getType()
+                    fields?[child.label!] = NSStringFromClass(type.getType())
                 }
             }
         }

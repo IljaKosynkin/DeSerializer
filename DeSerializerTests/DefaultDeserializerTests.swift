@@ -8,12 +8,14 @@
 
 import XCTest
 import DeSerializer
+import KlappaDeSerializer
 
 class DefaultDeserializerTests: XCTestCase {
     private let deserializer = DefaultDeSerializer()
     
-    override func setUp() {
+    override static func setUp() {
         super.setUp()
+        DeSerializer.setGlobalNamingStrategy(strategy: KLPExplicitNamingStrategy())
     }
     
     override func tearDown() {

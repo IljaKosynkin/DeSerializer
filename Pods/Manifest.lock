@@ -1,16 +1,12 @@
 PODS:
-  - KlappaDeSerializer (1.0.2)
+  - KlappaDeSerializer (2.0.0)
 
 DEPENDENCIES:
-  - KlappaDeSerializer (from `/Users/iljakosynkin/Documents/Projects/KlappaDeSerializer`)
-
-EXTERNAL SOURCES:
-  KlappaDeSerializer:
-    :path: /Users/iljakosynkin/Documents/Projects/KlappaDeSerializer
+  - KlappaDeSerializer
 
 SPEC CHECKSUMS:
-  KlappaDeSerializer: 4982cc0e3fffdabfe84dfb5d4d6cd409127f68d4
+  KlappaDeSerializer: 59d32ed72da90006cfdf7ee0ff09e2234a4bafbf
 
-PODFILE CHECKSUM: 9c8f60e7d4830ec03c9f2a21a9e10d9cd42fbc49
+PODFILE CHECKSUM: 982396c05b4400785f7b24da653f03dee158481e
 
 COCOAPODS: 1.2.0.beta.3

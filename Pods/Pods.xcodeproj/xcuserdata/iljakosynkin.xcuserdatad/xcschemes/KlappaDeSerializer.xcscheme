@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '87ADFD7109D6DB2CE4486FF19D605F39'
+               BlueprintIdentifier = 'D6F9640190871C1BC3F0349B11E1F943'
                BlueprintName = 'KlappaDeSerializer'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'KlappaDeSerializer.framework'>

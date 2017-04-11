@@ -24,6 +24,7 @@
 		5F0B49291E3FAAE900CB4023 /* DeSerializerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B49281E3FAAE900CB4023 /* DeSerializerProtocol.swift */; };
 		5F0B492D1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B492C1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift */; };
 		5F0B492F1E3FD36000CB4023 /* Typeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B492E1E3FD36000CB4023 /* Typeable.swift */; };
+		5F10EE2A1E7FC4D700625830 /* Large.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F10EE291E7FC4D700625830 /* Large.json */; };
 		5F13227A1E47B6100071401C /* SwiftyArrayTypeExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1322791E47B6100071401C /* SwiftyArrayTypeExtractor.swift */; };
 		5F4294DD1E7C608C00794181 /* SimpleObject3.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F4294DC1E7C608C00794181 /* SimpleObject3.json */; };
 		5F4294DF1E7C6B2400794181 /* PerformaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4294DE1E7C6B2400794181 /* PerformaceTests.swift */; };
@@ -61,6 +62,7 @@
 		5F0B49281E3FAAE900CB4023 /* DeSerializerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeSerializerProtocol.swift; sourceTree = "<group>"; };
 		5F0B492C1E3FD2B000CB4023 /* SwiftyFieldsRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyFieldsRetriever.swift; sourceTree = "<group>"; };
 		5F0B492E1E3FD36000CB4023 /* Typeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typeable.swift; sourceTree = "<group>"; };
+		5F10EE291E7FC4D700625830 /* Large.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Large.json; sourceTree = "<group>"; };
 		5F1322791E47B6100071401C /* SwiftyArrayTypeExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyArrayTypeExtractor.swift; sourceTree = "<group>"; };
 		5F4294DC1E7C608C00794181 /* SimpleObject3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SimpleObject3.json; sourceTree = "<group>"; };
 		5F4294DE1E7C6B2400794181 /* PerformaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformaceTests.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		5F0396321E407B5100BA7E42 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				5F10EE291E7FC4D700625830 /* Large.json */,
 				5F0396331E407B5100BA7E42 /* Array.json */,
 				5F0396341E407B5100BA7E42 /* NestedObject.json */,
 				5F0396351E407B5100BA7E42 /* NestedObjectWithArray.json */,
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F03963A1E407B5100BA7E42 /* NestedObjectWithArray.json in Resources */,
+				5F10EE2A1E7FC4D700625830 /* Large.json in Resources */,
 				5F0396381E407B5100BA7E42 /* Array.json in Resources */,
 				5F03963B1E407B5100BA7E42 /* SimpleObject.json in Resources */,
 				5F0396391E407B5100BA7E42 /* NestedObject.json in Resources */,

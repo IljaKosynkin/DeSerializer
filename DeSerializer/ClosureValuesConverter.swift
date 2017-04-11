@@ -17,7 +17,7 @@ class ClosureValuesConverter<In, Out>: NSObject, KLPValueConverter {
         super.init()
     }
     
-    required init() {
+    required override init() {
         fatalError("Not supposed to be called")
     }
     

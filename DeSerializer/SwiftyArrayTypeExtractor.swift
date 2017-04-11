@@ -10,8 +10,9 @@ import Foundation
 import KlappaDeSerializer
 
 class SwiftyArrayTypeExtractor: NSObject, KLPArrayTypeExtractor {
-    public func getType(_ object: KLPDeserializable!, forField fieldName: String!) -> AnyClass! {
-        let mirror = Mirror(reflecting: object)
+    public func getType(_ forClass: KLPDeserializable.Type!, forField fieldName: String!) -> AnyClass! {
+        let obj = forClass.init()
+        let mirror = Mirror(reflecting: obj!)
         if let child = mirror.children.filter({ $0.label == fieldName }).first, let type = type(of: child.value) as? Typeable.Type {
             return type.getType()
         }

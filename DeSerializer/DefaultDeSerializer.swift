@@ -11,7 +11,7 @@ import KlappaDeSerializer
 
 public class DefaultDeSerializer: KLPStandardDeserializer, DeSerializerProtocol {
     
-    public required init() {
+    public required override init() {
         super.init()
         retriever = SwiftyFieldsRetriever()
         extractor = SwiftyArrayTypeExtractor()
@@ -20,29 +20,17 @@ public class DefaultDeSerializer: KLPStandardDeserializer, DeSerializerProtocol 
     public func deserialize<T: KLPDeserializable>(json: [String: Any]) -> T? {
         return super.deserialize(T.self, json: json) as? T
     }
-     
-    private func getPointer<T>(type: T.Type?) -> AutoreleasingUnsafeMutablePointer<AnyClass?>? {
-        guard let type = type else { return nil }
-        
-        var cls: AnyClass = type as! AnyClass
-        return AutoreleasingUnsafeMutablePointer<AnyClass?>.init(&cls)
+    
+    public func add<Out: AnyObject>(converter: KLPValueConverter, fieldName: String, type: Type, output: Out.Type) {
+        super.add(converter, forField: fieldName, forInputType: type, forOutputClass: output)
     }
     
-    public func addValueConverter<Out>(converter: KLPValueConverter, fieldName: String?, type: Type, output: Out.Type?) {
-        let outType = getPointer(type: output)
-        super.add(converter, forField: fieldName, forInputType: type, forOutputClass: outType)
+    public func add<In: AnyObject, Out: AnyObject>(converter: KLPValueConverter, fieldName: String, input: In.Type, output: Out.Type) {
+        super.addValueConverter(forCustomClass: converter, forField: fieldName, forCustomClass: input, forOutputClass: output)
     }
     
-    public func addValueConverter<In, Out>(converter: KLPValueConverter, fieldName: String?, input: In.Type?, output: Out.Type?) {
-        let inType = getPointer(type: input)
-        let outType = getPointer(type: output)
-        super.addValueConverter(forCustomClass: converter, forField: fieldName, forCustomClass: inType, forOutputClass: outType)
-    }
-    
-    public func addValueConverter<In, Out>(fieldName: String?, converterClosure: @escaping (In) -> Out) {
+    public func add<In: AnyObject, Out: AnyObject>(fieldName: String, converterClosure: @escaping (In) -> Out) {
         let converter = ClosureValuesConverter(closure: converterClosure)
-        let inType = getPointer(type: In.self)
-        let outType = getPointer(type: Out.self)
-        super.addValueConverter(forCustomClass: converter, forField: fieldName, forCustomClass: inType, forOutputClass: outType)
+        super.addValueConverter(forCustomClass: converter, forField: fieldName, forCustomClass: In.self, forOutputClass: Out.self)
     }
 }
