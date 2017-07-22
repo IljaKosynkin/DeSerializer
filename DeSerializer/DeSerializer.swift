@@ -31,6 +31,11 @@ public class DeSerializer: NSObject {
         return KLPDeserializer.deserialize(withString: T.self, jsonString: json) as? [T]
     }
     
+    public static func deserialize(json: String, type: KLPDeserializable.Type) -> KLPDeserializable? {
+        postInit()
+        return KLPDeserializer.deserialize(withString: type, jsonString: json) as? KLPDeserializable
+    }
+    
     public static func deserialize<T: KLPDeserializable>(json: [[String: Any]]) -> [T]? {
         postInit()
         return KLPDeserializer.deserialize(withArray: T.self, array: json) as? [T]
