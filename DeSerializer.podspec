@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.name         = "DeSerializer"
-  s.version      = “2.0.1”
+  s.version      = "2.0.1"
   s.summary      = "Lightweight library for JSON to object mapping using KVC and ObjC-Runtime"
 
   s.description  = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'KlappaDeSerializer'
 
-  s.source       = { :git => "https://github.com/IljaKosynkin/DeSerializer.git", :tag => "v2.0.1” }
+  s.source       = { :git => "https://github.com/IljaKosynkin/DeSerializer.git", :tag => "v2.0.1" }
 
   s.source_files  = "DeSerializer", "DeSerializer/**/*.{swift}"
 end
