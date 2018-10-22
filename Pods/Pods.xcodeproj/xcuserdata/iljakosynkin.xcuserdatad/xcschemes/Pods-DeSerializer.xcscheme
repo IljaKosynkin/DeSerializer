@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4412E3581AE86A3CD282DCA47B5163D2"
+               BlueprintIdentifier = "2D076C0BA2A5779C05850A67B3F5A377"
                BuildableName = "Pods_DeSerializer.framework"
                BlueprintName = "Pods-DeSerializer"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4412E3581AE86A3CD282DCA47B5163D2"
+            BlueprintIdentifier = "2D076C0BA2A5779C05850A67B3F5A377"
             BuildableName = "Pods_DeSerializer.framework"
             BlueprintName = "Pods-DeSerializer"
             ReferencedContainer = "container:Pods.xcodeproj">

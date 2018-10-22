@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D6F9640190871C1BC3F0349B11E1F943'
-               BlueprintName = 'KlappaDeSerializer'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'KlappaDeSerializer.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0E71697350D273481948579750FA3559"
+               BlueprintName = "KlappaDeSerializer"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "KlappaDeSerializer.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

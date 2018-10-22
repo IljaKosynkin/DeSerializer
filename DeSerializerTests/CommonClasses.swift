@@ -9,9 +9,14 @@
 import Foundation
 import DeSerializer
 
+@objc
 class SimpleObject: Ancestor {
-    var name: String!
-    var price: NSDecimalNumber!
+    @objc var name: String!
+    @objc var price: NSDecimalNumber!
+    
+    public override static func create() -> SimpleObject {
+        return SimpleObject()
+    }
     
     override static func getRequiredFields() -> [Any]! {
         return ["name"]
@@ -19,142 +24,201 @@ class SimpleObject: Ancestor {
 }
 
 class Thumbnail: Ancestor {
-    var url: String!
-    var height: String!
-    var width: String!
+    @objc var url: String!
+    @objc var height: String!
+    @objc var width: String!
+    
+    public override static func create() -> Thumbnail {
+        return Thumbnail()
+    }
 }
 
+@objc
 class NestedObject: Ancestor {
-    var title: String!
-    var summary: String!
-    var url: String!
-    var clickUrl: String!
-    var refererUrl: String!
-    var fileSize: Int = 0
-    var fileFormat: String!
-    var height: String!
-    var width: String!
-    var thumbnail: Thumbnail?
+    @objc var title: String!
+    @objc var summary: String!
+    @objc var url: String!
+    @objc var clickUrl: String!
+    @objc var refererUrl: String!
+    @objc var fileSize: Int = 0
+    @objc var fileFormat: String!
+    @objc var height: String!
+    @objc var width: String!
+    @objc var thumbnail: Thumbnail?
+    
+    public override static func create() -> NestedObject {
+        return NestedObject()
+    }
 }
 
+@objc
 class Address: Ancestor {
-    var streetAddress: String!
-    var city: String!
-    var state: String!
-    var postalCode: String!
+    @objc var streetAddress: String!
+    @objc var city: String!
+    @objc var state: String!
+    @objc var postalCode: String!
+    
+    public override static func create() -> Address {
+        return Address()
+    }
 }
 
+@objc
 class Phone: Ancestor {
-    var type: String!
-    var number: String!
+    @objc var type: String!
+    @objc var number: String!
+    
+    public override static func create() -> Phone {
+        return Phone()
+    }
 }
 
+@objc
 class NestedObjectWithArray: Ancestor {
-    var firstName: String!
-    var lastName: String!
-    var age: Int = 0
-    var address: Address!
-    var phoneNumber: [Phone] = []
+    @objc var firstName: String!
+    @objc var lastName: String!
+    @objc var age: Int = 0
+    @objc var address: Address!
+    @objc var phoneNumber: [Phone] = []
+    
+    public override static func create() -> NestedObjectWithArray {
+        return NestedObjectWithArray()
+    }
 }
 
+@objc
 class Recording: Ancestor {
-    var RecType: String!
-    var DupMethod: String!
-    var DupInType: String!
-    var Profile: String!
-    var Priority: String!
-    var EndTs: String!
-    var RecGroup: String!
-    var StorageGroup: String!
-    var StartTs: String!
-    var RecordId: String!
-    var EncoderId: String!
-    var PlayGroup: String!
-    var Status: String!
+    @objc var RecType: String!
+    @objc var DupMethod: String!
+    @objc var DupInType: String!
+    @objc var Profile: String!
+    @objc var Priority: String!
+    @objc var EndTs: String!
+    @objc var RecGroup: String!
+    @objc var StorageGroup: String!
+    @objc var StartTs: String!
+    @objc var RecordId: String!
+    @objc var EncoderId: String!
+    @objc var PlayGroup: String!
+    @objc var Status: String!
+    
+    public override static func create() -> Recording {
+        return Recording()
+    }
 }
 
+@objc
 class ArtworkInfo: Ancestor {
-    var StorageGroup: String!
-    var URL: String!
-    var `Type`: String!
-    var FileName: String!
+    @objc var StorageGroup: String!
+    @objc var URL: String!
+    @objc var `Type`: String!
+    @objc var FileName: String!
+    
+    public override static func create() -> ArtworkInfo {
+        return ArtworkInfo()
+    }
 }
 
+@objc
 class Artwork: Ancestor {
-    var ArtworkInfos: [ArtworkInfo] = []
+    @objc var ArtworkInfos: [ArtworkInfo] = []
+    
+    public override static func create() -> Artwork {
+        return Artwork()
+    }
 }
 
+@objc
 class Channel: Ancestor {
-    var ServiceId: String!
-    var ChanNum: String!
-    var TransportId: String!
-    var SourceId: String!
-    var FrequencyId: String!
-    var CommFree: String!
-    var UseEIT: String!
-    var DefaultAuth: String!
-    var ChannelName: String!
-    var SIStandard: String!
-    var ATSCMinorChan: String!
-    var Visible: String!
-    var Format: String!
-    var Programs: [String] = []
-    var ATSCMajorChan: String!
-    var FrequencyTable: String!
-    var ChanId: String!
-    var Frequency: String!
-    var InputId: String!
-    var CallSign: String!
-    var IconURL: String!
-    var MplexId: String!
-    var NetworkId: String!
-    var Modulation: String!
-    var FineTune: String!
-    var ChanFilters: String!
-    var XMLTVID: String!
+    @objc var ServiceId: String!
+    @objc var ChanNum: String!
+    @objc var TransportId: String!
+    @objc var SourceId: String!
+    @objc var FrequencyId: String!
+    @objc var CommFree: String!
+    @objc var UseEIT: String!
+    @objc var DefaultAuth: String!
+    @objc var ChannelName: String!
+    @objc var SIStandard: String!
+    @objc var ATSCMinorChan: String!
+    @objc var Visible: String!
+    @objc var Format: String!
+    @objc var Programs: [String] = []
+    @objc var ATSCMajorChan: String!
+    @objc var FrequencyTable: String!
+    @objc var ChanId: String!
+    @objc var Frequency: String!
+    @objc var InputId: String!
+    @objc var CallSign: String!
+    @objc var IconURL: String!
+    @objc var MplexId: String!
+    @objc var NetworkId: String!
+    @objc var Modulation: String!
+    @objc var FineTune: String!
+    @objc var ChanFilters: String!
+    @objc var XMLTVID: String!
+    
+    public override static func create() -> Channel {
+        return Channel()
+    }
 }
 
+@objc
 class Program: Ancestor {
-    var Stars: String!
-    var Title: String!
-    var HostName: String!
-    var Artwork: Artwork!
-    var Repeat: String!
-    var Inetref: String!
-    var LastModified: String!
-    var SubTitle: String!
-    var AudioProps: String!
-    var FileSize: String!
-    var VideoProps: String!
-    var SeriesId: String!
-    var Season: String!
-    var ProgramFlags: String!
-    var Episode: String!
-    var Airdate: String!
-    var StartTime: String!
-    var Recording: Recording!
-    var Description: String!
-    var Channel: Channel!
-    var Category: String!
-    var EndTime: String!
-    var FileName: String!
-    var SubProps: String!
-    var ProgramId: String!
-    var CatType: String!
+    @objc var Stars: String!
+    @objc var Title: String!
+    @objc var HostName: String!
+    @objc var Artwork: Artwork!
+    @objc var Repeat: String!
+    @objc var Inetref: String!
+    @objc var LastModified: String!
+    @objc var SubTitle: String!
+    @objc var AudioProps: String!
+    @objc var FileSize: String!
+    @objc var VideoProps: String!
+    @objc var SeriesId: String!
+    @objc var Season: String!
+    @objc var ProgramFlags: String!
+    @objc var Episode: String!
+    @objc var Airdate: String!
+    @objc var StartTime: String!
+    @objc var Recording: Recording!
+    @objc var Description: String!
+    @objc var Channel: Channel!
+    @objc var Category: String!
+    @objc var EndTime: String!
+    @objc var FileName: String!
+    @objc var SubProps: String!
+    @objc var ProgramId: String!
+    @objc var CatType: String!
+    
+    public override static func create() -> Program {
+        return Program()
+    }
 }
 
+@objc
 class ProgramList: Ancestor {
-    var Version: String!
-    var StartIndex: String!
-    var ProtoVer: String!
-    var TotalAvailable: String!
-    var AsOf: String!
-    var Programs: [Program] = []
-    var Count: String!
+    @objc var Version: String!
+    @objc var StartIndex: String!
+    @objc var ProtoVer: String!
+    @objc var TotalAvailable: String!
+    @objc var AsOf: String!
+    @objc var Programs: [Program] = []
+    @objc var Count: String!
+    
+    public override static func create() -> ProgramList {
+        return ProgramList()
+    }
 }
 
+@objc
 class Large: Ancestor {
-    var ProgramList: ProgramList!
+    @objc var ProgramList: ProgramList!
+    
+    public override static func create() -> Large {
+        return Large()
+    }
 }
 
 

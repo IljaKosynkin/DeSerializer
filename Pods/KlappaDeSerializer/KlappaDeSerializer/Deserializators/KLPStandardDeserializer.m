@@ -37,7 +37,7 @@ static NSString* separator = @"|\\o/|";
 }
 
 - (NSObject<KLPDeserializable>*) deserialize:(Class<KLPDeserializable>) classToDeserialize json:(NSDictionary*) jsonToDeserialize {
-    NSObject<KLPDeserializable>* object = [[classToDeserialize alloc] init];
+    NSObject<KLPDeserializable>* object = [classToDeserialize allocate];
     KLPObjectSchema* schema = [defaultManager retrieveSchema: classToDeserialize];
     
     for (NSString* key in schema.keys) {

@@ -1,12 +1,16 @@
 PODS:
-  - KlappaDeSerializer (2.0.0)
+  - KlappaDeSerializer (2.1.1)
 
 DEPENDENCIES:
   - KlappaDeSerializer
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KlappaDeSerializer
+
 SPEC CHECKSUMS:
-  KlappaDeSerializer: 59d32ed72da90006cfdf7ee0ff09e2234a4bafbf
+  KlappaDeSerializer: a1145a3498185a143c38102b89995c3321038df4
 
 PODFILE CHECKSUM: 982396c05b4400785f7b24da653f03dee158481e
 
-COCOAPODS: 1.2.0.beta.3
+COCOAPODS: 1.5.3

@@ -17,7 +17,7 @@ public class DeSerializer: NSObject {
         if !alreadySet {
             alreadySet = true
             KLPDeserializer.setDefault(defaultDeserializer)
-            (defaultManager as? KLPDefaultSchemaManager)?.arrayTypeExtractor = SwiftyArrayTypeExtractor()
+            (defaultManager as? KLPDefaultSchemaManager)?.arrayTypeExtractor = SwiftArrayTypeExtractor()
         }
     }
     

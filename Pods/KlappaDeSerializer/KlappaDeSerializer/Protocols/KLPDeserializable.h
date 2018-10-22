@@ -9,10 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "KLPNamingStrategy.h"
 
-@protocol KLPDeserializable
-+ (id) alloc;
-- (id) init;
-
+@protocol KLPDeserializable <NSObject>
++ (id<KLPDeserializable>) allocate;
 + (id<KLPNamingStrategy>) getNamingStrategy;
 
 + (NSDictionary*) getFieldsToClassMap;

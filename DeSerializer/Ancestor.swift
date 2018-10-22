@@ -9,9 +9,18 @@
 import Foundation
 import KlappaDeSerializer
 
-open class Ancestor: NSObject, KLPDeserializable {
-    required override public init() {
-        super.init()
+public protocol IAncestor: KLPDeserializable {
+    static func create() -> Self
+}
+
+@objc
+open class Ancestor: NSObject, IAncestor {
+    open class func create() -> Self {
+        fatalError("Implement this function")
+    }
+    
+    public static func allocate() -> KLPDeserializable {
+        return self.create()
     }
     
     open class func getRequiredFields() -> [Any]! {

@@ -35,7 +35,7 @@ Lets consider following JSON object:
 
 And according to it class declaration:
 ```objective-c
-@interface KLPFSimpleObject : NSObject
+@interface KLPFSimpleObject : KLPAncestor
 @property NSString* name;
 @property NSDecimalNumber* price;
 @end
@@ -77,7 +77,7 @@ Lets consider following JSON object:
 ```
 And according to it classes declarations:
 ```objective-c
-@interface KLPFThumbnail : NSObject
+@interface KLPFThumbnail : KLPAncestor
 
 @property NSString* url;
 @property NSString* height;
@@ -89,7 +89,7 @@ And according to it classes declarations:
 
 @end
 
-@interface KLPFNestedObject : NSObject
+@interface KLPFNestedObject : KLPAncestor
 
 @property NSString* title;
 @property NSString* summary;
@@ -149,7 +149,7 @@ So, lets once again consider following JSON object:
  ```
  And according to it classes declaration:
  ```objective-c
- @interface KLPFAddress : NSObject
+ @interface KLPFAddress : KLPAncestor
 
 @property NSString* streetAddress;
 @property NSString* city;
@@ -162,7 +162,7 @@ So, lets once again consider following JSON object:
 
 @end
 
-@interface KLPFPhone : NSObject
+@interface KLPFPhone : KLPAncestor
 
 @property NSString* type;
 @property NSString* number;
@@ -173,7 +173,7 @@ So, lets once again consider following JSON object:
 
 @end
 
-@interface KLPFNestedObjectWithArray : NSObject
+@interface KLPFNestedObjectWithArray : KLPAncestor
 
 @property NSString* firstName;
 @property NSString* lastName;
@@ -245,7 +245,7 @@ Lets consider following JSON sample:
 ```
 And according class declaration:
 ```objective-c
-@interface KLPFThumbnail : NSObject
+@interface KLPFThumbnail : KLPAncestor
 
 @property NSString* url;
 @property NSString* height;
@@ -257,7 +257,7 @@ And according class declaration:
 
 @end
 
-@interface KLPFNestedObject : NSObject
+@interface KLPFNestedObject : KLPAncestor
 
 @property NSString* title;
 @property NSString* summary;
@@ -323,5 +323,9 @@ Basically, let consider that you have field "id" in your model class and you wan
 ```
 So, in this particular case, if KlappaInjector meet JSON that doesn't have "id" in it - it will return nil, even if the rest of fields is here.
 
+# Warnings and restrictions
+Note that all classes to which you want to deserialize JSON must conform to KLPDeserializable protocol. 
+Please, **DO NOT** make extension on NSObject to conform to this protocol, inherit your classes from KLPAncestor instead.
+
 # Contributing
-All contributions and feedback are very appreciated and welcomed. If you have some issues or questions how KlappaInjector works - you always can ask it in issues section or provide fix as Pull Request.
+All contributions and feedback are very appreciated and welcomed. If you have some issues or questions how KlappaDeSerializer works - you always can ask it in issues section or provide fix as Pull Request.

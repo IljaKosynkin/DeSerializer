@@ -14,7 +14,7 @@ public class DefaultDeSerializer: KLPStandardDeserializer, DeSerializerProtocol 
     public required override init() {
         super.init()
         retriever = SwiftyFieldsRetriever()
-        extractor = SwiftyArrayTypeExtractor()
+        extractor = SwiftArrayTypeExtractor()
     }
     
     public func deserialize<T: KLPDeserializable>(json: [String: Any]) -> T? {
