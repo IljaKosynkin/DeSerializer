@@ -22,6 +22,11 @@ or:
 ```
 And you're free to go.
 
+# Important notes
+## Function 'create'
+Note that unfortunately due to changes to Obj-C interop in Swift 4.2 you have to provide implementation for function "create" (examples are provided below).
+Hopefully, I will be able to make more convinient method to work around problems in future releases.
+
 # Usage
 ## Simple case
 Library provides class with static methods called KLPDeserializer and it's highly encouraged to use it. 
@@ -39,6 +44,10 @@ And according to it class declaration:
 class SimpleObject: Ancestor {
     @objc var name: String!
     @objc var price: NSDecimalNumber!
+    
+    public override static func create() -> SimpleObject {
+        return SimpleObject()
+    }
     
     override static func getRequiredFields() -> [Any]! {
         return ["name"]
@@ -79,6 +88,10 @@ class Thumbnail: Ancestor {
     @objc var url: String!
     @objc var height: String!
     @objc var width: String!
+    
+    public override static func create() -> Thumbnail {
+        return Thumbnail()
+    }
 }
 
 @objc
@@ -93,6 +106,10 @@ class NestedObject: Ancestor {
     @objc var height: String!
     @objc var width: String!
     @objc var thumbnail: Thumbnail?
+    
+    public override static func create() -> NestedObject {
+        return NestedObject()
+    }
 }
 ```
 
@@ -137,12 +154,20 @@ Let's take a look at following JSON:
     @objc var city: String!
     @objc var state: String!
     @objc var postalCode: String!
+    
+    public override static func create() -> Address {
+        return Address()
+    }
 }
 
 @objc
 class Phone: Ancestor {
     @objc var type: String!
     @objc var number: String!
+    
+    public override static func create() -> Phone {
+        return Phone()
+    }
 }
 
 @objc
@@ -152,6 +177,10 @@ class NestedObjectWithArray: Ancestor {
     @objc var age: Int = 0
     @objc var address: Address!
     @objc var phoneNumber: [Phone] = []
+    
+    public override static func create() -> NestedObjectWithArray {
+        return NestedObjectWithArray()
+    }
 }
  ```
  It can be deserialized in exactly the same way as it was in previous cases:
@@ -204,6 +233,10 @@ class Thumbnail: Ancestor {
     @objc var url: String!
     @objc var height: String!
     @objc var width: String!
+    
+    public override static func create() -> Thumbnail {
+        return Thumbnail()
+    }
 }
 
 class NestedObject: Ancestor {
@@ -217,6 +250,10 @@ class NestedObject: Ancestor {
     @objc var height: String!
     @objc var width: String!
     @objc var thumbnail: Thumbnail?
+    
+    public override static func create() -> NestedObject {
+        return NestedObject()
+    }
 }
 ```
 As you might already have guessed, deserialization is very easy:
