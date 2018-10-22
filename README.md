@@ -8,7 +8,7 @@ with more Swifty syntax and better support for Swift features.
 # Installation
 Add:
 ```
-    pod ‘DeSerializer’
+    pod 'DeSerializer'
 ```
 to your Podfile.
 
@@ -35,9 +35,10 @@ Lets consider following JSON object:
 
 And according to it class declaration:
 ```swift
+@objc
 class SimpleObject: Ancestor {
-    var name: String!
-    var price: NSDecimalNumber!
+    @objc var name: String!
+    @objc var price: NSDecimalNumber!
     
     override static func getRequiredFields() -> [Any]! {
         return ["name"]
@@ -73,23 +74,25 @@ Lets consider following JSON object:
 ```
 And according to it classes declarations:
 ```swift
+@objc
 class Thumbnail: Ancestor {
-    var url: String!
-    var height: String!
-    var width: String!
+    @objc var url: String!
+    @objc var height: String!
+    @objc var width: String!
 }
 
+@objc
 class NestedObject: Ancestor {
-    var title: String!
-    var summary: String!
-    var url: String!
-    var clickUrl: String!
-    var refererUrl: String!
-    var fileSize: Int = 0
-    var fileFormat: String!
-    var height: String!
-    var width: String!
-    var thumbnail: Thumbnail?
+    @objc var title: String!
+    @objc var summary: String!
+    @objc var url: String!
+    @objc var clickUrl: String!
+    @objc var refererUrl: String!
+    @objc var fileSize: Int = 0
+    @objc var fileFormat: String!
+    @objc var height: String!
+    @objc var width: String!
+    @objc var thumbnail: Thumbnail?
 }
 ```
 
@@ -128,24 +131,27 @@ Let's take a look at following JSON:
  ```
  And according to it classes' declarations:
  ```swift
+ @objc
  class Address: Ancestor {
-    var streetAddress: String!
-    var city: String!
-    var state: String!
-    var postalCode: String!
+    @objc var streetAddress: String!
+    @objc var city: String!
+    @objc var state: String!
+    @objc var postalCode: String!
 }
 
+@objc
 class Phone: Ancestor {
-    var type: String!
-    var number: String!
+    @objc var type: String!
+    @objc var number: String!
 }
 
+@objc
 class NestedObjectWithArray: Ancestor {
-    var firstName: String!
-    var lastName: String!
-    var age: Int = 0
-    var address: Address!
-    var phoneNumber: [Phone] = []
+    @objc var firstName: String!
+    @objc var lastName: String!
+    @objc var age: Int = 0
+    @objc var address: Address!
+    @objc var phoneNumber: [Phone] = []
 }
  ```
  It can be deserialized in exactly the same way as it was in previous cases:
@@ -193,23 +199,24 @@ Lets consider following JSON sample:
 ```
 And according classes' declarations:
 ```swift
+@objc
 class Thumbnail: Ancestor {
-    var url: String!
-    var height: String!
-    var width: String!
+    @objc var url: String!
+    @objc var height: String!
+    @objc var width: String!
 }
 
 class NestedObject: Ancestor {
-    var title: String!
-    var summary: String!
-    var url: String!
-    var clickUrl: String!
-    var refererUrl: String!
-    var fileSize: Int = 0
-    var fileFormat: String!
-    var height: String!
-    var width: String!
-    var thumbnail: Thumbnail?
+    @objc var title: String!
+    @objc var summary: String!
+    @objc var url: String!
+    @objc var clickUrl: String!
+    @objc var refererUrl: String!
+    @objc var fileSize: Int = 0
+    @objc var fileFormat: String!
+    @objc var height: String!
+    @objc var width: String!
+    @objc var thumbnail: Thumbnail?
 }
 ```
 As you might already have guessed, deserialization is very easy:
